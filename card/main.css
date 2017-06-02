@@ -139,51 +139,7 @@ a:active {
    text-decoration: underline;
 }
 
-/*****ARROW*****
-.arrow-container {
-   background-color: yellow;
-   padding: 0;
-   margin: 0;
-   height: 38em;
-   width: 50%;
-}
 
-.left-line {
-   float: left;
-   background-color: red;
-   height: 100%;
-   width: 10px;
-   border-right: solid 0.35em red;
-}
-
-.center-line {
-   margin: 0 auto;
-   float: left;
-   height: 100%;
-   width: 0.35em;
-   background-color: red;
-   text-align: center;
-   border-right: solid 0.35em;
-}
-
-.right-line {
-   float: left;
-   background-color: blue;
-   height: 100%;
-   width: 10px;
-   border-right: solid 0.35em red;
-}
-**********/
-
-/*****HORIZONTAL CARD******
-.card {
-   transform: translateX(10%) translateY(15%) rotate(-91.5deg);
-}
-
-p#address{
-   padding-top: 1em;
-}
-****************************/
 }
 
 .mycard {
