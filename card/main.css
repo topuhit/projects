@@ -157,6 +157,7 @@ a:active {
 }
 
 .counterimg {
-    opacity: 0.1;
-    filter: alpha(opacity=10); /* For IE8 and earlier */
+    opacity: 0.05;
+    filter: alpha(opacity=5); /* For IE8 and earlier */
+    float: right;
 }
