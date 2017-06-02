@@ -16,6 +16,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+	   $("#close").click(function(){
+	   	$("#column").hide();
+	   });
+	});
+
+
 
  
         

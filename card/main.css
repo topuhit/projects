@@ -195,3 +195,17 @@ a:active {
  #about:hover{
  	cursor: url(c.png), auto;
  }
+
+ .close{
+ 	align: right;
+ }
+
+ img {
+ 	    float: right;
+    position: relative;
+    z-index: 1000;
+ }
+
+ img:hover{
+ 	cursor: url(c.png), auto;
+ }
