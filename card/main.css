@@ -190,3 +190,6 @@ a:active {
  padding: 20px;
  float: left;
 }
+ #about:hover{
+ 	cursor: url(c.png), auto;
+ }
