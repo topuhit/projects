@@ -26,5 +26,5 @@ $(document).ready(function () {
         $('.mycard').show();
         
 
-    }, 19000);
+    }, 19500);
 });
