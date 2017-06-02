@@ -7,3 +7,15 @@ $(".mycard").show()
 });
 });
 
+$(document).ready(function(){
+	   $("#column").hide();
+	   $("#about").click(function(){
+        $("#column").toggle();
+ 
+        
+    });
+});
+
+
+ 
+        

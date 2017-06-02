@@ -161,3 +161,32 @@ a:active {
     filter: alpha(opacity=5); /* For IE8 and earlier */
     float: right;
 }
+
+
+#column {
+   background-color: black;
+  width: 40%;
+  margin: 10px;
+   padding: 30px;
+  border-style: solid;
+  border-color: white;
+  float: right;
+  color: white;
+  font-size: 24px;
+  line-height: 1.6em;
+  word-spacing: 5px;
+ /* border-width: 2px;*/
+ text-align: left;
+ float: left;
+}
+
+
+
+#about {
+  font-size: 24px;
+  text-align: right;
+  cursor: pointer;
+ color: white;
+ padding: 20px;
+ float: left;
+}
