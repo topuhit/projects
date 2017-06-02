@@ -126,7 +126,7 @@ p#subtitle {
 }
 
 p#address{
-   padding-top: 0em;
+   padding-top: .8em;
 /*   padding-top: 1em; with arrow*/
 }
 
@@ -196,5 +196,5 @@ p#address{
 
 .graphic {
    font-size: 3em;
-   padding-top: .2em;
+   padding-top: .5em;
 }
