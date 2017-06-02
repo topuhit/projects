@@ -99,6 +99,7 @@ body{
    background-position: center;
    background-size: 100%;
    background-color: black;
+   
 }
 
 .card {
@@ -155,3 +156,4 @@ a:active {
     filter: alpha(opacity=5); /* For IE8 and earlier */
     float: right;
 }
+
