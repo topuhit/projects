@@ -1,16 +1,24 @@
+
 @font-face {
-   font-family: 'SuisseBPIntl-Regular';
-   src: url('SuisseIntl-Regular-WebS.eot') format('embedded-opentype'),
-   url('SuisseIntl-Regular-WebS.woff') format('woff');
-   font-weight: 400;
-   font-style: normal;
-   font-stretch: normal;
+font-family: 'Avenir LT Std 35 Light';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 35 Light'), url('AvenirLTStd-Light.woff') format('woff');
 }
+
+
+@font-face {
+font-family: 'Avenir LT Std 65 Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 65 Medium'), url('AvenirLTStd-Medium.woff') format('woff');
+}
+
 
 html, body {
   width: 100%;
   height: 100%;
-   font-family: 'SuisseBPIntl-Regular', sans-serif;;
+   font-family: 'Avenir LT Std 35 Light', sans-serif;;
 }
 
 body {
@@ -61,7 +69,7 @@ p#phone {
 
 /* Typography*/
 h1, p {
-   font-size: 3em;
+   font-size: 4.5em;
    margin: 0;
    font-style: none;
    font-weight: 400;
@@ -69,11 +77,12 @@ h1, p {
 }
 
 h1 {
-   text-transform: uppercase;
+   font-family: 'Avenir LT Std 35 Light';
 }
 
 p#address{
-   padding-top: 2em;
+   padding-top: 1.2em;
+   font-size: 3.5em;
 }
 
 a {
@@ -185,3 +194,7 @@ p#address{
 }
 
 
+.graphic {
+   font-size: 3em;
+   padding-top: .2em;
+}
