@@ -1,5 +1,5 @@
 $(document).ready(function () {
     setTimeout(function(){
         $('.mycard').show();
-   }, 19140);
+   }, 19240);
 });
