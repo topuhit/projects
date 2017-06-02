@@ -1,11 +1,4 @@
 @font-face {
-font-family: 'Avenir LT Std 85 Heavy';
-font-style: normal;
-font-weight: normal;
-src: local('Avenir LT Std 85 Heavy'), url('AvenirLTStd-Heavy.woff') format('woff');
-}
-
-@font-face {
 font-family: 'Avenir LT Std 55 Roman';
 font-style: normal;
 font-weight: normal;
@@ -74,7 +67,7 @@ h1, p {
 }
 
 h1 {
-   font-family: 'Avenir LT Std 85 Heavy';
+   font-family: 'Avenir LT Std 55 Roman';
 
 }
 
