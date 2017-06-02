@@ -26,3 +26,9 @@ $(document).ready(function(){
     $( "#draggable" ).draggable();
   } );
 
+
+$(document).on('click', function (e) {
+    if ($(e.target).closest("#about").length === 0) {
+        $("#column").hide();
+    }
+});
