@@ -166,8 +166,6 @@ a:active {
 #column {
    background-color: black;
   width: 40%;
-  margin: 10px;
-   padding: 30px;
   border-style: solid;
   border-color: white;
   float: right;
@@ -178,6 +176,9 @@ a:active {
  /* border-width: 2px;*/
  text-align: left;
  float: left;
+ display: none;
+ margin-top: .8em;
+ padding: 1em;
 }
 
 
@@ -189,6 +190,7 @@ a:active {
  color: white;
  padding: 20px;
  float: left;
+
 }
  #about:hover{
  	cursor: url(c.png), auto;
