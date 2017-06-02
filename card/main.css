@@ -13,11 +13,13 @@ html, body {
 
 body {
    background-color: black;
+   
 }
 
 .container {
    height: 100%;
    display: none;
+   
 }
 
 .card {
@@ -51,7 +53,9 @@ video {
    min-height: 100%;
    width: auto;
    height: auto;
+
 }
+
 
 p#phone {
    display: none;
@@ -88,6 +92,7 @@ a {
 
 a:hover {
    text-decoration: underline;
+   cursor: url(c.png), auto;
 }
 
 
@@ -156,4 +161,3 @@ a:active {
     filter: alpha(opacity=5); /* For IE8 and earlier */
     float: right;
 }
-
