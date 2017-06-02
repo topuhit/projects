@@ -164,6 +164,7 @@ a:active {
 
 
 #column {
+	position: relative;
    background-color: black;
   width: 40%;
   border-style: solid;
