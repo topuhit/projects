@@ -24,6 +24,8 @@ $(document).ready(function(){
 
   $( function() {
     $( "#draggable" ).draggable();
+      $( "#column" ).draggable();
+      $( "#about" ).draggable();
   } );
 
 
