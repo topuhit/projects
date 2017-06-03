@@ -1,3 +1,3 @@
 # projects
-Card Project:
-https://topuhit.github.io/projects/card/
+[Card Project](https://topuhit.github.io/projects/card/)
+
