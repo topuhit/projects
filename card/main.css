@@ -213,4 +213,7 @@ a:active {
  img:hover{
  	cursor: url(c.png), auto;
  }
-
+.ap{
+  align: left;
+  float: left;
+ }
