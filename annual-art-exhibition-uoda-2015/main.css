@@ -536,8 +536,8 @@ h2.through-line:after { background-clip: padding; background-image: linear-gradi
 h4 { font-family: "Basis Grotesque Pro";font-weight: normal; margin-bottom: 10px; }
 
 /** Links */
-a { color: #2a7ae2; text-decoration: none; }
-a:visited {color: #2a7ae2;}
+a { color: #9b9b9b; text-decoration: none; }
+a:visited {color: #9b9b9b;}
 a:hover { color: #000000; text-decoration: underline; }
 
 /** Blockquotes */
@@ -618,7 +618,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (max-width: 730px) { .buttons a { font-size: 20px; border-radius: 6px; width: 110px; } }
 .buttons a:visited { border-color: #1756a9; }
 .buttons a:hover { text-decoration: none; border-color: #000; }
-.buttons a.accent { background: #2a7ae2; color: #fff; }
+.buttons a.accent { background: #9b9b9b; color: #fff; }
 .buttons a.accent:hover { background: #1756a9; border-color: #1756a9; color: #fff; text-decoration: none; }
 
 .donate-footer .buttons { margin-bottom: 1.5em; }
@@ -722,7 +722,7 @@ a.pure-menu-link:hover { text-decoration: none; }
 .pure-menu-allow-hover:hover > .pure-menu-children, .pure-menu-active > .pure-menu-children { top: 56px; left: auto; right: 0; text-align: right; min-width: 146px; background-color: #FDFDFD; }
 
 .pure-menu-link {color: #9b9b9b;}
-.pure-menu-link:visited {color: #2a7ae2;}
+.pure-menu-link:visited {color: #9b9b9b;}
 
 .pure-menu-has-children { top: 1px; }
 
@@ -801,6 +801,6 @@ a.pure-menu-link:hover { text-decoration: none; }
 .highlight .il { color: #099; }
 
 
-.committee {background: url(committee.png);border-top: 1px solid #e8e8e8;color: #393939;font-size: 18px;line-height: 16px;padding-bottom: 15px;padding-top: 15px;margin-bottom: 0px;}
+.committee {border-top: 1px solid #e8e8e8;color: #393939;font-size: 16px;line-height: 20px;padding-bottom: 15px;padding-top: 15px;margin-bottom: 0px;}
 .committee p { margin-bottom: 5px; }
 .committee *:last-child {margin-bottom: 0;font-family: "Basis Grotesque Pro Light", Helvetica, Arial, sans-serif;}
