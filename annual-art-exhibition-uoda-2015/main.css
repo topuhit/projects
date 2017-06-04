@@ -530,14 +530,14 @@ h1, h2, h3, h4, h5, h6 { font-family: "Basis Grotesque Pro Light"; font-weight: 
 @media screen and (max-width: 730px) { h1 { font-size: 1.4em; margin-top: 30px; } }
 h2.through-line { font-family: "Basis Grotesque Pro"; font-size: 14px; display: table; white-space: nowrap; width: 100%; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.09em; font-weight: normal; color: #828282; margin-top: 20px; }
 h2.through-line a { color: #2B3C69; text-decoration: none; }
-h2.through-line a:hover { color: #2B3C69; text-decoration: underline; }
+h2.through-line a:hover { color: #2b3c69; text-decoration: underline; }
 h2.through-line:after { background-clip: padding; background-image: linear-gradient(transparent 47%, #dddddd 48%, #dddddd 52%, transparent 52%); content: ""; display: table-cell; width: 100%; border-left: 10px solid #FDFDFD; }
 
 h4 { font-family: "Basis Grotesque Pro";font-weight: normal; margin-bottom: 10px; }
 
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }
-a:visited { color: #1756a9; }
+a:visited {color: #2a7ae2;}
 a:hover { color: #000000; text-decoration: underline; }
 
 /** Blockquotes */
@@ -721,8 +721,8 @@ a.pure-menu-link:hover { text-decoration: none; }
 
 .pure-menu-allow-hover:hover > .pure-menu-children, .pure-menu-active > .pure-menu-children { top: 56px; left: auto; right: 0; text-align: right; min-width: 146px; background-color: #FDFDFD; }
 
-.pure-menu-link { color: #144b92; }
-.pure-menu-link:visited { color: #144b92; }
+.pure-menu-link {color: #9b9b9b;}
+.pure-menu-link:visited {color: #2a7ae2;}
 
 .pure-menu-has-children { top: 1px; }
 
