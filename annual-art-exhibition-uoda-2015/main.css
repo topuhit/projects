@@ -571,10 +571,10 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Site header */
 .site-header { min-height: 108px; position: relative; }
-.site-header .linux-foundation-link { float: right; margin-top: 5px; }
-@media screen and (max-width: 730px) { .site-header .linux-foundation-link { float: none; } }
-.site-header .linux-foundation-link img { display: block; }
-@media screen and (max-width: 730px) { .site-header .linux-foundation-link img { margin: 0 auto; } }
+.site-header .anual-art-exhibition-link { float: right; margin-top: 5px; }
+@media screen and (max-width: 730px) { .site-header .anual-art-exhibition-link { float: none; } }
+.site-header .anual-art-exhibition-link img { display: block; }
+@media screen and (max-width: 730px) { .site-header .anual-art-exhibition-link img { margin: 0 auto; } }
 
 .site-title { margin-bottom: 7px; margin-left: 0px; margin-top: 7px; padding-left: 0px; font-size: 26px; line-height: 56px; letter-spacing: -1px; float: left; }
 .site-title img { max-width: 250px; margin-bottom: 18px; margin-top: 10px; }
