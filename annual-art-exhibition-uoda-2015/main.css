@@ -3,10 +3,29 @@
 .statsgraph { display: block; text-align: center; max-width: 100%; width: 100%; }
 
 /* Open Sans @font-face kit */
-@font-face { font-family: 'Open Sans'; src: url("fonts/OpenSans-Light.eot"); src: url("fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light.woff") format("woff"), url("fonts/OpenSans-Light.ttf") format("truetype"), url("fonts/OpenSans-Light.svg#OpenSansLight") format("svg"); font-weight: 300; font-style: normal; }
-@font-face { font-family: 'Open Sans'; src: url("fonts/OpenSans-Regular.eot"); src: url("fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("truetype"), url("fonts/OpenSans-Regular.svg#OpenSansRegular") format("svg"); font-weight: 400; font-style: normal; }
-@font-face { font-family: 'Open Sans'; src: url("fonts/OpenSans-Bold.eot"); src: url("fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold.woff") format("woff"), url("fonts/OpenSans-Bold.ttf") format("truetype"), url("fonts/OpenSans-Bold.svg#OpenSansBold") format("svg"); font-weight: bold; font-style: normal; }
-/*!
+@font-face {
+font-family: 'Basis Grotesque Pro Light';
+font-style: normal;
+font-weight: normal;
+src: local('Basis Grotesque Pro Light'), url('BasisGrotesquePro-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Basis Grotesque Pro';
+font-style: normal;
+font-weight: normal;
+src: local('Basis Grotesque Pro'), url('BasisGrotesquePro-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Basis Grotesque Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Basis Grotesque Pro Bold'), url('BasisGrotesquePro-Bold.woff') format('woff');
+}
+*!
 Pure v0.6.0
 Copyright 2014 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
@@ -35,7 +54,7 @@ a:active, a:hover { outline: 0; }
 
 abbr[title] { border-bottom: 1px dotted; }
 
-b, strong { font-weight: 700; }
+b, strong { font-family: "Basis Grotesque Pro Bold" ;font-weight: normal; }
 
 dfn { font-style: italic; }
 
@@ -481,11 +500,11 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
 /** Basic styling */
-body { font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 400; color: #000000; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; }
+body {font-family: "Basis Grotesque Pro", Helvetica, Arial, sans-serif;font-size: 20px;line-height: 1.5;font-weight: normal;color: #000000;background-color: #fdfdfd;-webkit-text-size-adjust: 100%;}
 
-.pure-g { font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
+.pure-g { font-family: "Basis Grotesque Pro", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
 
-.pure-g [class*="pure-u"] { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+.pure-g [class*="pure-u"] { font-family: "Basis Grotesque Pro", Helvetica, Arial, sans-serif; }
 
 .text-center { text-align: center; }
 
@@ -509,12 +528,12 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
 @media screen and (max-width: 730px) { h1 { font-size: 1.4em; margin-top: 30px; } }
-h2.through-line { font-size: 14px; display: table; white-space: nowrap; width: 100%; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.09em; font-weight: bold; color: #828282; margin-top: 20px; }
+h2.through-line { font-family: "Basis Grotesque Pro"; font-size: 14px; display: table; white-space: nowrap; width: 100%; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.09em; font-weight: normal; color: #828282; margin-top: 20px; }
 h2.through-line a { color: #2B3C69; text-decoration: none; }
 h2.through-line a:hover { color: #2B3C69; text-decoration: underline; }
 h2.through-line:after { background-clip: padding; background-image: linear-gradient(transparent 47%, #dddddd 48%, #dddddd 52%, transparent 52%); content: ""; display: table-cell; width: 100%; border-left: 10px solid #FDFDFD; }
 
-h4 { font-weight: bold; margin-bottom: 10px; }
+h4 { font-family: "Basis Grotesque Pro";font-weight: normal; margin-bottom: 10px; }
 
 /** Links */
 a { color: #2a7ae2; text-decoration: none; }
@@ -586,7 +605,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (max-width: 730px) { .hero.tall { padding: 50px 0; } }
 .hero.tall div.container { background-color: rgba(254, 254, 254, 0.7); border: 1px solid rgba(254, 254, 254, 0.85); border-radius: 10px; padding: 30px; width: 90%; max-width: 950px; margin: 0 auto; }
 @media screen and (max-width: 730px) { .hero.tall div.container { max-width: 90%; border-radius: 0; padding: 10px 10px; } }
-.hero.tall h1 { font-weight: 300; font-size: 40px; color: #2C3C69; line-height: 1.4; margin: 0 0 0.35em; }
+.hero.tall h1 { font-family: "Basis Grotesque Pro"; font-weight: normal; font-size: 40px; color: #2C3C69; line-height: 1.4; margin: 0 0 0.35em; }
 @media screen and (max-width: 730px) { .hero.tall h1 { font-size: 26px; } }
 .hero.tall h1 span { color: #de8216; font-weight: bold; }
 .hero.tall h2 { font-weight: normal; margin-bottom: 0; font-size: 20px; }
@@ -595,7 +614,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .buttons { margin-top: 20px; }
 @media screen and (max-width: 730px) { .buttons { margin-top: 10px; } }
 .buttons .tal a, .buttons .tar a { text-align: center; }
-.buttons a { font-size: 32px; font-weight: 300; padding: 6px 18px; border: 2px solid #2a7ae2; border-radius: 8px; width: 175px; }
+.buttons a { font-family: "Basis Grotesque Pro"; font-size: 32px; font-weight: normal; padding: 6px 18px; border: 2px solid #2a7ae2; border-radius: 8px; width: 175px; }
 @media screen and (max-width: 730px) { .buttons a { font-size: 20px; border-radius: 6px; width: 110px; } }
 .buttons a:visited { border-color: #1756a9; }
 .buttons a:hover { text-decoration: none; border-color: #000; }
@@ -609,7 +628,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .hero.slim div.container { text-align: left; width: 90%; margin: 0 auto; }
 .hero.slim div.container h1 { font-weight: normal; }
 @media screen and (max-width: 730px) { .hero.slim div.container { max-width: 90%; border-radius: 0; } }
-.hero.slim h1 { font-weight: 300; margin-bottom: 10px; font-size: 46px; display: inline-block; width: auto; background-color: rgba(254, 254, 254, 0.5); border-radius: 8px; padding: 10px 20px; }
+.hero.slim h1 { font-family: "Basis Grotesque Pro"; font-weight: normal; margin-bottom: 10px; font-size: 46px; display: inline-block; width: auto; background-color: rgba(254, 254, 254, 0.5); border-radius: 8px; padding: 10px 20px; }
 @media screen and (max-width: 730px) { .hero.slim h1 { font-size: 30px; margin-top: 10px; } }
 .hero.slim h1 span { color: #1678D3; }
 
@@ -624,7 +643,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Donate footer */
 .donate-footer { border-top: 1px solid #e8e8e8; background-color: #f8f8f8; padding: 26px 0; margin-top: 30px; }
-.donate-footer h2 { margin-bottom: 10px; line-height: 1; }
+.donate-footer h2 {margin-bottom: 10px;line-height: 1;font-family: "Basis Grotesque Pro Bold", Helvetica, Arial, sans-serif;}
 
 /** Site footer */
 .site-footer { border-top: 1px solid #e8e8e8; padding-top: 30px; }
@@ -633,7 +652,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .contact-list, .social-media-list { list-style: none; margin-left: 0; }
 
-.footer-col-wrapper { font-size: 15px; color: #000000; margin-left: -15px; }
+.footer-col-wrapper {font-size: 18px;color: #000000;margin-left: -15px;}
 
 .footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
 
@@ -682,7 +701,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (max-width: 730px) { .well { max-width: 90%; border-radius: 0; padding: 10px 10px; } }
 
 /** Site nav */
-.site-nav { float: right; line-height: 56px; margin-top: 6px; }
+.site-nav {float: right;line-height: 56px;margin-top: 6px;/* font-family: "Basis Grotesque Pro Light", Helvetica, Arial, sans-serif; */}
 .site-nav #menuIcon { display: none; }
 .site-nav .page-link { color: #000000; line-height: 1.5; }
 .site-nav .page-link:not(:first-child) { margin-left: 20px; }
@@ -781,7 +800,7 @@ a.pure-menu-link:hover { text-decoration: none; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-/** Linux Foundation Collaborative Projects */
-.linuxfoundation-collab-footer { background: url(../images/linuxfoundation-collab-bg.png); border-top: 1px solid #e8e8e8; color: #393939; font-size: 11px; line-height: 16px; padding-bottom: 15px; padding-top: 15px; margin-bottom: 0px; }
-.linuxfoundation-collab-footer p { margin-bottom: 5px; }
-.linuxfoundation-collab-footer *:last-child { margin-bottom: 0; }
+
+.committee {background: url(committee.png);border-top: 1px solid #e8e8e8;color: #393939;font-size: 18px;line-height: 16px;padding-bottom: 15px;padding-top: 15px;margin-bottom: 0px;}
+.committee p { margin-bottom: 5px; }
+.committee *:last-child {margin-bottom: 0;font-family: "Basis Grotesque Pro Light", Helvetica, Arial, sans-serif;}
