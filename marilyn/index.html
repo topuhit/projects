@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ugly Looking Yellow Black </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+        // Load from Server:
+        var raster = new Raster('http://assets.paperjs.org/images/marilyn.jpg');
+        // Load from DOM image:
+        // var raster = new Raster('marilyn');
+        raster.onLoad = function() {
+            console.log('Successfully loaded image!');
+        };
+        var lastScale = 1;
+        var center = view.center;
+        function onFrame(event) {
+            var scale = (Math.sin(event.time * 2) + 1) / 2;
+            raster.scale(scale / lastScale);
+            lastScale = scale;
+            raster.position = center + [
+                Math.sin(event.time * 3) * 256,
+                Math.sin(event.time * 2.5) * 256
+            ];
+            raster.rotate(event.delta * 120);
+        }
+    </script>
+    </head>
+
+    <body>
+
+   
+       <div class="container">
+        <h1>Hello Welcome</h1>
+        
+          <canvas id="canvas" class="container" resize></canvas>
+            <img id="marilyn"  style="display: none;" src="marilyn.jpg"/>
+
+            <div class="container" >
+        
+            <p>Sometimes we get stuck in a vocabulary rut and wind up on repeat - using the same phrase over and over, and over again, trying to make it cover multiple and/or different situations.
+
+            And yet we know, words are like clothes. One size does does not fit all.</p>
+            
+
+            <p>With this in mind, I am happy to announce that here at Body Central Clinical Massage Therapy, the tables are set. The music is playing in the background. The therapist are prepared ready to go. This is a superb welcome, fit for royalty, and that's what you are to us!</p>
+               
+     
+           <img src="bg-01.svg">
+                
+              
+                  </div>
+        </div>
+        
+      
+    </body>
+    
+</html>

@@ -1,0 +1,53 @@
+/*
+@font-face {
+   font-family: 'woodford_bourne_problack';
+   src: url('fonts/woodfordbournepro-black-webfont.html') format('woff2'),
+   url('fonts/woodfordbournepro-black-webfont.woff') format('woff'),
+   url('fonts/Gotham-Medium.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+*/
+
+@font-face {
+   font-family: 'Gotham Medium';
+   src: url('fonts/Gotham-Medium.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+body, h1, p {
+    font-family: 'Gotham Medium';
+      font-size: 26px;
+      background-image: url('bg-01.svg');
+      background-color: yellow;
+    color: black;
+
+
+    }
+    
+
+h1  {
+
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 10px;
+    
+    }
+
+h1:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+
+img {
+    width: 100%;
+    border: 5px solid black;
+/*    background-color: white;*/
+}
+
+
+
