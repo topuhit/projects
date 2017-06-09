@@ -60,14 +60,9 @@ List of Static Backup Sites
 [http://tariquldesign.com/Web-Development-Links]
 ---
 [Web-Development-Links ](http://tariquldesign.com/Web-Development-Links)
-
-
 Md Tariqul Islam
-
 09/06/2017
-
 Dhaka, Bangladesh
-
 ---
 ![alt text](https://media.cargocollective.com/1/22/725716/headerimg/th_TA1.png "TariqulDesign")
 
