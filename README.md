@@ -57,9 +57,9 @@ List of Static Backup Sites
 * <https://topuhit.github.io/projects/card/>
 
 ---
-[http://tariquldesign.com/Web-Development-Links]
----
+
 [Web-Development-Links ](http://tariquldesign.com/Web-Development-Links)
+
 Md Tariqul Islam
 09/06/2017
 Dhaka, Bangladesh
