@@ -13,10 +13,10 @@ Md Tariqul Islam
 
 Here's the list of all web development projects I have done so far.
 
-<http://tariquldesign.com>
-<http://blog.tariquldesign.com>
-<https://bellalhossain.com>
-<http://tariquldesign.ml/>
+1. <http://tariquldesign.com>
+2. <http://blog.tariquldesign.com>
+3. <https://bellalhossain.com>
+4. <http://tariquldesign.ml/>
 
 
 <https://uodaadda.wordpress.com/>
