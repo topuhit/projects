@@ -11,7 +11,7 @@ Here's the list of all web development projects I have done so far.
 * <http://blog.tariquldesign.com>
 * <https://bellalhossain.com>
 * <http://tariquldesign.ml/>
-
+---
 * <https://uodaadda.wordpress.com/>
 * <https://uodaadda.icyboards.net/index.php>
 * <http://dev-tariqul-islam.pantheonsite.io/>
@@ -32,7 +32,6 @@ Here's the list of all web development projects I have done so far.
 * Created on 7th June 2017, forked from fgassert/responsive-app | Jekyll + GitHub Pages - HTML, CSS3, and JavaScript.
 * <https://topuhit.github.io/projects/marilyn/>
 * Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
-
 ---
 Social Media Presence
 
