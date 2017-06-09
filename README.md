@@ -5,7 +5,7 @@
 4. [marilyn ](https://topuhit.github.io/projects/marilyn/)
 
 Md Tariqul Islam
-[tariquldesign.com ](http://tariquldesign.com)
+[http://tariquldesign.com]
 
 ![alt text](http://media.cargocollective.com/1/22/725716/headerimg/TA1.png "TariqulDesign")
 
