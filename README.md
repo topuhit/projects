@@ -29,9 +29,7 @@ Here's the list of all web development projects I have done so far.
 <http://dev-tariqul-islam.pantheonsite.io/>
 
 <https://somethoughtstariquldesign.wordpress.com/>
-
 <https://tariquldesignblog.wordpress.com>
-
 <https://topuhit.github.io/portfolio/index.html>
 
 <http://tariqul.businesscatalyst.com/index.html>
