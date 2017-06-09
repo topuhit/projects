@@ -41,8 +41,8 @@ Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
 
 
 Social Media Presence
-https://www.facebook.com/topu.hit]
-https://www.facebook.com/TariqulDesign]
+<https://www.facebook.com/topu.hit>
+https://www.facebook.com/TariqulDesign>
 https://www.behance.net/topu_hit]
 https://www.linkedin.com/in/topuhit]
 https://www.youtube.com/user/topuhittopu]
