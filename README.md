@@ -7,14 +7,11 @@
 Md Tariqul Islam
 [tariquldesign.com ](http://tariquldesign.com)
 
-
-
-Inline-style: 
 ![alt text](http://media.cargocollective.com/1/22/725716/headerimg/TA1.png "TariqulDesign")
 
 ---
-Here's the list of all web development projects I have done so far.
 
+Here's the list of all web development projects I have done so far.
 [http://tariquldesign.com]
 [http://blog.tariquldesign.com]
 [https://bellalhossain.com]
