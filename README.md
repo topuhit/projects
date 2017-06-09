@@ -8,11 +8,7 @@
 Md Tariqul Islam
 09/06/2017
 ---
-
-[http://tariquldesign.com]
-[http://tariquldesign.com/Web-Development-Links]
 ![alt text](https://media.cargocollective.com/1/22/725716/headerimg/th_TA1.png "TariqulDesign")
-
 ---
 
 Here's the list of all web development projects I have done so far.
