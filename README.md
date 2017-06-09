@@ -11,7 +11,7 @@ Here's the list of all web development projects I have done so far.
 * <http://blog.tariquldesign.com>
 * <https://bellalhossain.com>
 * <http://tariquldesign.ml/>
----
+
 * <https://uodaadda.wordpress.com/>
 * <https://uodaadda.icyboards.net/index.php>
 * <http://dev-tariqul-islam.pantheonsite.io/>
@@ -59,7 +59,7 @@ List of Static Backup Sites
 ---
 
 [Web-Development-Links ](http://tariquldesign.com/Web-Development-Links)
-
+---
 Md Tariqul Islam
 09/06/2017
 Dhaka, Bangladesh
