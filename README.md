@@ -43,7 +43,7 @@ Here's the list of all web development projects I have done so far.
 * Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
 
 
-
+---
 Social Media Presence
 
 * <https://www.facebook.com/topu.hit>
@@ -58,7 +58,7 @@ Social Media Presence
 * <https://issuu.com/topu.hit>
 * <https://www.slideshare.net/TariqulIslam27>
 
-
+---
 List of Static Backup Sites
 
 * <https://topuhit.github.io/tariquldesign/index.htm>
@@ -67,7 +67,7 @@ List of Static Backup Sites
 * <https://topuhit.github.io/UODAadda/index.html>
 * <https://topuhit.github.io/projects/card/>
 
-
+---
 [http://tariquldesign.com/Web-Development-Links]
-
+---
 [Web-Development-Links ](http://tariquldesign.com/Web-Development-Links)
