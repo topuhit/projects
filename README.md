@@ -23,14 +23,10 @@ Here's the list of all web development projects I have done so far.
 *   [https://topuhit.github.io/portfolio/index.html](https://topuhit.github.io/portfolio/index.html)
 *   [http://tariqul.businesscatalyst.com/index.html](http://tariqul.businesscatalyst.com/index.html)
 *   [http://somethoughts.bitballoon.com/](http://somethoughts.bitballoon.com/)
-
-Created on 2nd March 2017, Based on ZURB Foundation hosted on BitBalloon
-
+*   Created on 2nd March 2017, Based on ZURB Foundation hosted on BitBalloon
 *   [http://ghost.bellalhossain.com/](http://ghost.bellalhossain.com/)
 *   [https://topuhit.github.io/aguner-poroshmoni/aguner-poroshmoni.html](https://topuhit.github.io/aguner-poroshmoni/aguner-poroshmoni.html)
-
-Created on 24th May 2017, Aguner Poroshmoni, HTML, CSS, Javascript
-
+*   Created on 24th May 2017, Aguner Poroshmoni, HTML, CSS, Javascript
 *   [https://topuhit.github.io/aguner-poroshmoni/javascript/index.html](https://topuhit.github.io/aguner-poroshmoni/javascript/index.html)
 *   Created on 30th May 2017, experimentation using DIN Web Fonts, and Some JavaScript.
 *   [https://topuhit.github.io/projects/card/](https://topuhit.github.io/projects/card/)
