@@ -32,7 +32,7 @@ Here's the list of all web development projects I have done so far.
 *   [https://topuhit.github.io/projects/card/](https://topuhit.github.io/projects/card/)
 *   [https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html](https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html)
 *   [https://topuhit.github.io/responsive-app/](https://topuhit.github.io/responsive-app/)
-*   Created on 7th June 2017, forked from fgassert/responsive-app | Jekyll + GitHub Pages - HTML, CSS3, and JavaScript.
+*   Created on 7th June 2017, forked from fgassert/responsive-app Jekyll + GitHub Pages - HTML, CSS3, and JavaScript.
 *   [https://topuhit.github.io/projects/marilyn/](https://topuhit.github.io/projects/marilyn/)
 *   Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
 
