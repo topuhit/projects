@@ -4,8 +4,6 @@
 4.  [marilyn](https://topuhit.github.io/projects/marilyn/)
 5.  [Aguner Poroshmoni](https://topuhit.github.io/aguner-poroshmoni/aguner-poroshmoni.html)
 
-
-
 Here's the list of all web development projects I have done so far.
 
 *   [http://tariquldesign.com](http://tariquldesign.com)
