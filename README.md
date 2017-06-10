@@ -32,20 +32,15 @@ Created on 2nd March 2017, Based on ZURB Foundation hosted on BitBalloon
 Created on 24th May 2017, Aguner Poroshmoni, HTML, CSS, Javascript
 
 *   [https://topuhit.github.io/aguner-poroshmoni/javascript/index.html](https://topuhit.github.io/aguner-poroshmoni/javascript/index.html)
-
-Created on 30th May 2017, experimentation using DIN Web Fonts, and Some JavaScript.
-
+*   Created on 30th May 2017, experimentation using DIN Web Fonts, and Some JavaScript.
 *   [https://topuhit.github.io/projects/card/](https://topuhit.github.io/projects/card/)
 *   [https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html](https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html)
 *   [https://topuhit.github.io/responsive-app/](https://topuhit.github.io/responsive-app/)
-
-Created on 7th June 2017, forked from fgassert/responsive-app | Jekyll + GitHub Pages - HTML, CSS3, and JavaScript.
-
+*   Created on 7th June 2017, forked from fgassert/responsive-app | Jekyll + GitHub Pages - HTML, CSS3, and JavaScript.
 *   [https://topuhit.github.io/projects/marilyn/](https://topuhit.github.io/projects/marilyn/)
+*   Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
 
-Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
-
-
+***
 
 Social Media Presence
 
@@ -83,7 +78,7 @@ List of Static Backup Sites
 
 Md Tariqul Islam
 09/06/2017
-Dhaka, Bangladesh [→](https://analytics.google.com/analytics/web/?authuser=0#report/defaultid/a100807398w147806989p152645300/%3Foverview-graphOptions.primaryConcept%3Danalytics.pageviews%26overview-graphOptions.compareConcept%3Danalytics.avgPageviews/)
+Dhaka, Bangladesh →
 
 * * *
 
