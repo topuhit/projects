@@ -90,8 +90,7 @@
 
 .centertext {
     text-align: center;
-    font-size: 72px;
-    position: absolute;
+      position: absolute;
     color: white;
 }
 
@@ -99,10 +98,11 @@ body {
     background-color: #444444;
     -webkit-animation: bounc 0.9s ease-out infinite;
     animation: bounc 0.9s ease-out infinite;
+    background-image: url('bg.svg');
 }
 
 h1 {
-    font-family: Arial, sans-serif;
+    font-family: 'Days One', Arial, sans-serif;
     color: #eeeeee;
 }
 
