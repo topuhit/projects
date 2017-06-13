@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'larish_altesemibold';
+    src: url('larishalte-semibold-webfont.woff2') format('woff2'), url('larishalte-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'larish_altesemibold', sans-serif;
+    font-size: 72px;
+    line-height: 1.1;
+    color: #141329;
+}
+
+.head {
+    width: 80%;
+    margin-left: 2em;
+}
+
+p {
+    font-family: 'larish_altesemibold', sans-serif;
+    font-size: 40px;
+    color: white;
+    background-color: #0b0a1a;
+    padding: 20px;
+    line-height: 1.2;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+body {
+    font-family: 'larish_altesemibold', sans-serif;
+    color: black;
+}
+
+.grid__item {
+    padding: 1em;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip__trigger {
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip__trigger-text {
+    display: block;
+    padding: 0.85em;
+    pointer-events: none;
+}
+
+.tooltip__base {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 30px;
+}
+
+.tooltip__content {
+    color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    padding: 0 1em;
+    opacity: 0;
+    font-size: 0.85em;
+    line-height: 1.7;
+}
+
+.tooltip__shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.tooltip__shape {
+    fill: yellow;
+}
+
+
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    p {
+   
+    font-size: 26px;
+    }
+
+    .head {
+    width: 90%;
+    margin-left: .5em;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+   
+    font-size: 18px;
+    }
+
+    .head {
+    width: 90%;
+    margin-left: .3em;
+    }
+}
