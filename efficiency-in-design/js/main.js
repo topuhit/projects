@@ -140,15 +140,15 @@
 			if( this.DOM.shape ) {
 				this.DOM.path = this.DOM.shape.childElementCount > 1 ? Array.from(this.DOM.shape.querySelectorAll('path')) : this.DOM.shape.querySelector('path');
 			}
-			this.DOM.deco = this.DOM.base.querySelector('.tooltip__deco');
+			// this.DOM.deco = this.DOM.base.querySelector('.tooltip__deco');
 			this.DOM.content = this.DOM.base.querySelector('.tooltip__content');
 
-			this.DOM.letters = this.DOM.content.querySelector('.tooltip__letters');
+			// this.DOM.letters = this.DOM.content.querySelector('.tooltip__letters');
 			if( this.DOM.letters ) {
 				// Create spans for each letter.
-				charming(this.DOM.letters);
+				// charming(this.DOM.letters);
 				// Redefine content.
-				this.DOM.content = this.DOM.letters.querySelectorAll('span');
+				// this.DOM.content = this.DOM.letters.querySelectorAll('span');
 			}
 			this.initEvents();
 		}
@@ -198,16 +198,16 @@
 				let contentAnimOpts = {targets: this.DOM.content};
 				anime(Object.assign(contentAnimOpts, config[this.type][dir].content));
 			}
-			if ( config[this.type][dir].trigger ) {
-				anime.remove(this.DOM.triggerSpan);
-				let triggerAnimOpts = {targets: this.DOM.triggerSpan};
-				anime(Object.assign(triggerAnimOpts, config[this.type][dir].trigger));
-			}
-			if ( config[this.type][dir].deco ) {
-				anime.remove(this.DOM.deco);
-				let decoAnimOpts = {targets: this.DOM.deco};
-				anime(Object.assign(decoAnimOpts, config[this.type][dir].deco));
-			}
+			// if ( config[this.type][dir].trigger ) {
+			// 	anime.remove(this.DOM.triggerSpan);
+			// 	let triggerAnimOpts = {targets: this.DOM.triggerSpan};
+			// 	anime(Object.assign(triggerAnimOpts, config[this.type][dir].trigger));
+			// }
+			// if ( config[this.type][dir].deco ) {
+			// 	anime.remove(this.DOM.deco);
+			// 	let decoAnimOpts = {targets: this.DOM.deco};
+			// 	anime(Object.assign(decoAnimOpts, config[this.type][dir].deco));
+			// }
 		}
 		destroy() {
 			this.DOM.trigger.removeEventListener('mouseenter', this.mouseenterFn);
