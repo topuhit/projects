@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Understanding and Using rem Units in CSS</title>
+	 <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Understanding and Using rem Units in CSS - <a href="https://www.sitepoint.com/understanding-and-using-rem-units-in-css/" class="cool-link">SitePoint</a></h1>
+<p>Equal to the computed value of font-size on the root element. When specified on the font-size property of the root element, the rem units refer to the property's initial value. This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px). <a class="cool-link" href="https://www.sitepoint.com/understanding-and-using-rem-units-in-css/">More information</a></p>
+
+<h1>Use `rem` for Global Sizing; Use `em` for Local Sizing</h1>
+<p>So here's my idea: you still keep px size adjustments at the document level so you can make easy/efficient sweeping size changes. But then each module on the page has a font-size set in rem. Actual text elements (h1, h2, p, li, whatever), if you size them at all, are sized in em, and thus become relative to the module.
+<a class="cool-link" href="https://css-tricks.com/rem-global-em-local/">More information</a></p>
+
+<h1>Rem Units vs. Em Units</h1>
+
+<p>The main problem with em units is that they are relative to the font size of their own element. As such they can cascade and cause unexpected results. Let's consider the following example, where we want lists to have a font size of 12px, in the case where the root font size is the default 16px</p>
+
+
+<a class="button" href="">Send</a>
+
+</body>
+</html>
