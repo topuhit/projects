@@ -1,10 +1,14 @@
 # My Github Projects
+1.  [Efficiency in design](https://topuhit.github.io/projects/efficiency-in-design)
+2.  [Intruder](https://topuhit.github.io/projects/intruder)
+3.  [Card](https://topuhit.github.io/projects/card/)
+4.  [Annual Art Exhibition - UODA - 2015](http://uodaartexhibition2015.ml)
+5.  [Annual Art Exhibition - UODA - 2015](https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html)
+6.  [Responsive App](https://topuhit.github.io/responsive-app/)
+7.  [marilyn](https://topuhit.github.io/projects/marilyn/)
+8.  [Aguner Poroshmoni](https://topuhit.github.io/aguner-poroshmoni/aguner-poroshmoni.html)
 
-1.  [Card](https://topuhit.github.io/projects/card/)
-2.  [Annual Art Exhibition - UODA - 2015](https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html)
-3.  [Responsive App](https://topuhit.github.io/responsive-app/)
-4.  [marilyn](https://topuhit.github.io/projects/marilyn/)
-5.  [Aguner Poroshmoni](https://topuhit.github.io/aguner-poroshmoni/aguner-poroshmoni.html)
+* * *
 
 Here's the list of all web development projects I have done so far.
 
@@ -32,9 +36,12 @@ Here's the list of all web development projects I have done so far.
 *   [topuhit.github.io/projects/card](https://topuhit.github.io/projects/card/)
 *   [topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html](https://topuhit.github.io/projects/annual-art-exhibition-uoda-2015/index.html)
 *   [topuhit.github.io/responsive-app](https://topuhit.github.io/responsive-app/)
+
 *   Created on 7th June 2017, forked from fgassert/responsive-app Jekyll + GitHub Pages - HTML, CSS3, and JavaScript.
+
 *   [topuhit.github.io/projects/marilyn](https://topuhit.github.io/projects/marilyn/)
-*   Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
+
+Created on 8th June 2017, Used frameworks like: PaperJS, HTML-Canvas, Bootstrap
 
 * * *
 
@@ -62,8 +69,8 @@ List of Static Backup Sites
 *   [topuhit.github.io/UODAadda/index.html](https://topuhit.github.io/UODAadda/index.html)
 *   [topuhit.github.io/projects/card](https://topuhit.github.io/projects/card/)
 
-
 * * *
+
 
 ![alt text](https://media.cargocollective.com/1/22/725716/headerimg/th_TA1.png "TariqulDesign")
 
@@ -71,9 +78,10 @@ List of Static Backup Sites
 
 #### [Web Development Links](http://tariquldesign.com/Web-Development-Links)
 
-Md Tariqul Islam
-09/06/2017
-Dhaka, Bangladesh →
+Md Tariqul Islam  
+09/06/2017  
+Dhaka, Bangladesh [→]
+
 
 * * *
 
