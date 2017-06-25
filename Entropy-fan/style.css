@@ -102,22 +102,31 @@ div.panel {
 /* unvisited link */
 a:link {
     color:#212121;
+
+text-decoration: none;
+border-bottom: 1px dotted #212121;
+
 }
 
 /* visited link */
 a:visited {
     color: #212121;
+    text-decoration: none;
+	border-bottom: 1px dotted #212121;
 }
 
 /* mouse over link */
 a:hover {
     color: yellow;
-    text-decoration: underline;
     background-color: #212121;
+    text-decoration: none;
+	border-bottom: 1px dotted yellow;
+
 }
 
 /* selected link */
 a:active {
     color: yellow;
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #3c46be;
 }
