@@ -65,7 +65,9 @@
 	<circle class="st1" cx="350.3" cy="1163.7" r="23.8"/>
 	<circle class="st1" cx="260.8" cy="1241.2" r="23.8"/>
 </g>
+
 <text transform="matrix(1 0 0 1 591.5454 317.2565)" class="st7 st2 st3" Id="trust">Trust your local water ?</text>
+
 <g id="group">
 <image id="imageofcarlin" style="overflow:visible;" width="753" height="1035" xlink:href="carlin.png"  transform="matrix(0.921 0 0 0.921 517.25 353.3914)">
 </image>
@@ -145,9 +147,9 @@ for (i = 0; i < acc.length; i++) {
 
 $(document).ready(function(){
     $("#group").hover(function(){
-        $("#outline-of-carlin").css("display", "block");
+        $("#outline-of-carlin").fadeIn( "fast", "linear" );
         }, function(){
-        $("#outline-of-carlin").css("display", "none");
+        $("#outline-of-carlin").fadeOut( "fast", "linear" );
     });
 });
 
@@ -157,6 +159,7 @@ $( "#group" ).hover(function() {
    $( "#yellow-rectangle" ).fadeToggle( "slow", "linear" );
   
 });
+
 
 </script>
 
