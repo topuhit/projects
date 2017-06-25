@@ -1,0 +1,97 @@
+@font-face {
+font-family: 'Myriad Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold'), url('MYRIADPRO-BOLD.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Myriad Pro Bold', sans-serif;
+    color: #212121;
+}
+.main {
+
+
+
+  width: 100vw;
+  height: 100vh;
+  max-width:100%;
+
+
+}
+
+
+
+#trust:hover {
+	fill: #212121;
+	cursor: pointer;
+	text-decoration: underline;
+
+}
+
+
+/*#slanted-yellow polygon:hover {
+	fill: black;
+	cursor: pointer;
+
+}*/
+
+#boxer {
+	-webkit-box-shadow: 7px 17px 41px -9px rgba(0,0,0,0.37);
+-moz-box-shadow: 7px 17px 41px -9px rgba(0,0,0,0.37);
+box-shadow: 7px 17px 41px -9px rgba(0,0,0,0.37);
+}
+
+
+button.accordion {
+	font-family: 'Myriad Pro Bold', sans-serif;
+    background-color: #eee;
+    color: #212121;
+    cursor: pointer;
+    padding: 18px;
+    width: 30%;
+    border: #212121 2px solid;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: .3rem;
+	margin-bottom: .3rem;
+
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #212121;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    width: 30rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.acordion-div{
+  width: 80rem;
+    margin: 0 auto;
+}
+
