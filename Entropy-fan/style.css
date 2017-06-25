@@ -95,3 +95,25 @@ div.panel {
     margin: 0 auto;
 }
 
+/* unvisited link */
+a:link {
+    color:#212121;
+}
+
+/* visited link */
+a:visited {
+    color: #212121;
+}
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+    background-color: #212121;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+    text-decoration: underline;
+}
