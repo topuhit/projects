@@ -15,6 +15,13 @@
  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  	 
  <body>
+
+ <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/egRgweL12Uc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
  
 <div class="wrap main">
 
@@ -148,15 +155,18 @@ for (i = 0; i < acc.length; i++) {
 $(document).ready(function(){
     $("#group").hover(function(){
         $("#outline-of-carlin").fadeIn( "fast", "linear" );
+        $(".video-foreground, .video-background iframe").css( "opacity", "1" );
+       
         }, function(){
         $("#outline-of-carlin").fadeOut( "fast", "linear" );
+        $(".video-foreground, .video-background iframe").css( "opacity", ".1" );
+     
     });
 });
 
 
 $( "#group" ).hover(function() {
-  $( "#slanted-yellow").fadeToggle( "slow", "linear" );
-   $( "#yellow-rectangle" ).fadeToggle( "slow", "linear" );
+  $( "#slanted-yellow, #yellow-rectangle, .st1, .st2, .st3, .acordion-div").fadeToggle( "fast", "linear" );
   
 });
 
