@@ -25,6 +25,9 @@ body {
 }
 
 
+#imageofcarlin:hover{
+    cursor: pointer;
+}
 
 #trust:hover {
 	fill: #212121;
