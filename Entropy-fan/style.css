@@ -7,11 +7,19 @@ src: local('Myriad Pro Bold'), url('MYRIADPRO-BOLD.woff') format('woff');
 
 * {
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 body {
 	font-family: 'Myriad Pro Bold', sans-serif;
     color: #212121;
+}
+
+h1{
+	font-size: 3rem;
+}
+.link {
+	font-size: 3rem;
 }
 .main {
   width: 100vw;
@@ -50,12 +58,12 @@ button.accordion {
     background-color: #eee;
     color: #212121;
     cursor: pointer;
-    padding: 18px;
+    padding: 1rem;
     width: 30%;
     border: #212121 2px solid;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1rem;
     transition: 0.4s;
     border-radius: .3rem;
 	margin-bottom: .3rem;
@@ -71,7 +79,7 @@ button.accordion:after {
     color: #212121;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: .5rem;
     
 }
 
@@ -80,10 +88,12 @@ button.accordion.active:after {
 }
 
 div.panel {
-    padding: 0 18px;
-    width: 30rem;
+    padding: 0 1rem;
+    width: 40rem;
+    margin: 0 auto;
     background-color: white;
     max-height: 0;
+    text-align: center;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
@@ -92,6 +102,7 @@ div.panel {
   width: 60rem;
     margin: 0 auto;
     margin-bottom: 15rem;
+    text-align: center;
 }
 
 /* unvisited link */
@@ -154,5 +165,17 @@ a:active {
 }
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
+}
+
+#info { 
+  font-size: 4rem;
+  float: right;
+    height: 4rem; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    opacity: .4;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
 }
 
