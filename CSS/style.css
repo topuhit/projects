@@ -1,0 +1,57 @@
+/* Animation Basics */
+body {
+	background-color: #f2f2f2;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+    perspective: 100px;
+    padding: 50px;
+    padding-top: 200px;
+}
+
+.blue_robot {
+    border: #ab0000 30px solid;
+    transition: border .2s ease;
+    margin: 30px;
+}
+
+.blue_robot:hover {
+    cursor: pointer;
+    border: #0b6f0f 30px solid;
+}
+body {
+    background-image: url("bg.png");
+   
+   }
+
+
+   #info { 
+    position: static; 
+    width: 150px;
+    bottom:5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    margin: 2px;
+
+}
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.border{
+    border: 2px white solid;
+width: 20px;
+height: 50px;
+background-color: #ab0000;
+}
+
