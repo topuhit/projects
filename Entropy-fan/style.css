@@ -89,7 +89,7 @@ button.accordion.active:after {
 
 div.panel {
     padding: 0 1rem;
-    width: 40rem;
+    width: 100%;
     margin: 0 auto;
     background-color: white;
     max-height: 0;
@@ -99,7 +99,7 @@ div.panel {
 }
 
 .acordion-div{
-  width: 60rem;
+  width: 70%;
     margin: 0 auto;
     margin-bottom: 15rem;
     text-align: center;
@@ -168,14 +168,44 @@ a:active {
 }
 
 #info { 
-  font-size: 4rem;
-  float: right;
-    height: 4rem; 
+  
+    height: 4rem;
+
+
     position: fixed; 
     bottom:0%;
     width:100%; 
     opacity: .4;
     padding: 1rem;
     font-family: 'Arial', sans-serif;
+    font-size: 10px;
 }
 
+
+@media (max-width: 1202px) {
+    .acordion-div {
+        width: 80%
+    }
+
+    button.accordion{
+      width: 100%
+    }
+
+  }
+@media (max-width: 600px) {
+    .acordion-div {
+        width: 95%
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .link {
+      font-size: 2rem;
+    }
+
+
+
+
+  }
