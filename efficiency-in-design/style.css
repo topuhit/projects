@@ -12,6 +12,21 @@ h1 {
     color: #141329; 
 
 }
+
+
+
+
+::-moz-selection {
+    background: #141329;
+    color: white;
+}
+
+::selection {
+    background: #141329;
+    color: white;
+}
+
+
 .float-right{
 	float: right;
 margin-right: 10rem;
