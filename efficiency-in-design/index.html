@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Efficiency in design</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://www.kernjs.com/dependencies/jquery.js"></script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+      <script>
+		  $(document).ready(function() {
+		    $("h1").lettering();
+		  });
+		</script>
 </head>
 
 <body>
+<div class="float-right">
+    <p class="cb">read</p>
+    <div class="reveal-overlay">
+        <div id="about" class="reveal" data-reveal="hxwf06-reveal" aria-labelledby="directions" aria-hidden="false" role="dialog" data-yeti-box="about" data-resize="about" style="top: 58px; display: block; overflow: hidden;" tabindex="-1" data-events="resize">
+            <a class="close-button" data-close="" aria-label="Close" style="display: block;">x</a>
+            <p>
+                Efficiency in design
+                <hr>
+                <br> Before starting anything I take time and care to understand the core objectives of your business and what the design is meant to help you achieve. I do this simply to make sure that the graphic design we produce matches closely with the goals and objectives of your business.<br><br>
+                <br> A common problem with graphic designers is that they are more interested in winning an award or expressing themselves than producing a design that fits your business and sets you up for success. I recognise that the ultimate purpose of your business is not to create art. Creativity is important but it must be matched to a business requirement and not just getting you "out there".<br><br>
+                <br> Successful graphic design gets beyond the subjective "looks nice" and allows you to achieve something tangible.
+            </p>
+            <br/>
+            <br/>
+        </div>
+    </div>
+</div>
     <h1 class="head">Efficiency in design<br>
 Before starting anything I take time and care to understand the core objectives of your business and what the design is meant to help you achieve. I do this simply to make sure that the graphic design we produce matches closely with the goals and objectives of your business.
 <br>
@@ -20,7 +44,7 @@ Successful graphic design gets beyond the subjective "looks nice" and allows you
     <div class="grid__item">
         <div class="tooltip tooltip--indis" data-type="indis">
             <div class="tooltip__trigger" role="tooltip" aria-describedby="info-indis">
-                <span class="tooltip__trigger-text">A B O U T</span>
+                <span class="tooltip__trigger-text">D E S I G N &#8729; R E S P O N S E</span>
             </div>
             <div class="tooltip__base">
                 <svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
@@ -32,9 +56,28 @@ Successful graphic design gets beyond the subjective "looks nice" and allows you
     </div>
     </div>
     </div>
+
+
+    <script>
+    $(".cb").click(function() {
+        $(".reveal-overlay").css("display", "block");
+
+
+    });
+
+
+    $(".close-button").click(function() {
+        $(".reveal-overlay").css("display", "none");
+
+
+    });
+    </script>
+
+    
     <script src="js/anime.min.js"></script>
     <script src="js/charming.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

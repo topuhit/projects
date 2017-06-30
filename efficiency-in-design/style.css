@@ -7,11 +7,16 @@
 
 h1 {
     font-family: 'larish_altesemibold', sans-serif;
-    font-size: 72px;
+    font-size: 46px;
     line-height: 1.1;
-    color: #141329;
-}
+    color: #141329; 
 
+}
+.float-right{
+	float: right;
+margin-right: 10rem;
+
+}
 .head {
     width: 80%;
     margin-left: 2em;
@@ -20,9 +25,7 @@ h1 {
 p {
     font-family: 'larish_altesemibold', sans-serif;
     font-size: 40px;
-    color: white;
-    background-color: #0b0a1a;
-    padding: 20px;
+    color: #141329;
     line-height: 1.2;
 }
 
@@ -135,3 +138,1226 @@ body {
     margin-left: .3em;
     }
 }
+
+
+
+/*
+start of div*/
+
+.cb {
+  font-size: 26px;
+padding: 15px;
+width: 100px;
+background-color: white;
+text-align: center;
+border: 2px #141329 solid;
+
+}
+
+.cb:hover {
+    cursor: pointer;
+    background-color: #141329;
+    color: white;
+}
+
+
+
+.reveal-overlay {
+    background: rgba(69, 9, 9, 0.5) none repeat scroll 0% 0%;
+}
+
+.reveal-overlay {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+    display: none;
+    background-color: rgba(10, 10, 10, 0.45);
+    overflow-y: scroll;
+}
+
+#about a,
+#directions a {
+    text-transform: none;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+    #about a,
+    #directions a {
+        font-size: 1rem;
+    }
+}
+
+.reveal {
+    
+    border: 2px solid rgb(0, 0, 0);
+    padding-top: 2.5em;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .reveal {
+        padding-top: 5em;
+    }
+}
+
+.reveal a {
+    color: rgb(0, 174, 239);
+}
+
+.reveal .flex-video {
+    padding-bottom: 50%;
+    width: 75%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .reveal .flex-video {
+        width: 100%;
+    }
+}
+
+.reveal p {
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+    .reveal p {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+.reveal .close-button {
+    color: #fff;
+    background-color: #141329;
+    font-size: 3rem !important;
+    padding: 30px;
+    top: -20px;
+right: -5px;
+
+}
+
+.reveal .close-button::after {
+    content: none;
+}
+
+@media screen and (max-width: 63.9375em) {
+    .reveal .close-button {
+        top: 0px;
+        font-size: 3rem !important;
+    }
+}
+
+.reveal ul {
+    list-style: outside none none;
+    margin-left: 0px;
+}
+
+.reveal ul li {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.reveal .accordion-title {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.reveal .accordion-title:focus,
+.reveal .accordion-title:hover {
+    background: rgb(255, 255, 0) none repeat scroll 0% 0%;
+}
+
+.reveal .accordion-title::after {
+    content: none;
+}
+
+.reveal {
+    z-index: 4;
+    backface-visibility: hidden;
+    display: none;
+    padding: 6rem;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 0px;
+    background-color: rgb(254, 254, 254);
+    position: relative;
+    top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: auto;
+}
+
+[data-whatinput="mouse"] .reveal {
+    outline: 0px none;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .reveal {
+        min-height: 0px;
+    }
+}
+
+.reveal>:last-child {
+    margin-bottom: 0px;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    .reveal {
+        width: 500px;
+        max-width: 75rem;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .reveal {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        max-width: none;
+        height: 100vh;
+        min-height: 100vh;
+        margin-left: 0px;
+        border: 0px none;
+        border-radius: 0px;
+    }
+}
+
+.nav-box ul li a::after,
+.red-line::after,
+.reveal ul li a::after {
+    content: "";
+    background: red none repeat scroll 0% 0%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 50%;
+    transform: rotate(-10deg);
+    opacity: 0;
+}
+
+.nav-box ul li a:hover::after,
+.red-line:hover::after,
+.reveal ul li a:hover::after {
+    opacity: 1;
+}
+
+a {
+    line-height: inherit;
+    color: rgb(23, 121, 186);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:focus,
+a:hover {
+    color: rgb(20, 104, 160);
+}
+
+.close-button {
+    position: absolute;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+}
+
+[data-whatinput="mouse"] .close-button {
+    outline: 0px none;
+}
+
+.close-button:focus,
+.close-button:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.close-button,
+.close-button.medium {
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 2em;
+    line-height: 1;
+}
+
+@media screen and (min-width: 40em) {
+    .close-button {
+        display: none;
+    }
+}
+
+.close-button {
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 2em;
+    line-height: 1;
+    position: absolute;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+}
+
+/*
+Beging of kern*/
+
+h1 .char5 {
+    vertical-align: top;
+    font-size: 114%;
+}
+
+h1 .char1 {
+    vertical-align: top;
+    margin-left: -0.111em;
+    display: inline-block;
+    position: relative;
+    top: -0.25em;
+    font-size: 245%;
+}
+
+h1 .char13 {
+    vertical-align: top;
+    margin-left: -0.014em;
+    display: inline-block;
+    position: relative;
+    top: 0.097em;
+}
+
+h1 .char15 {
+    vertical-align: top;
+    margin-left: 1.292em;
+    display: inline-block;
+    position: relative;
+    top: 0.111em;
+}
+
+h1 .char24 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.139em;
+}
+
+h1 .char31 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.222em;
+}
+
+h1 .char52 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.25em;
+}
+
+h1 .char56 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.097em;
+    font-size: 138%;
+}
+
+h1 .char62 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.111em;
+}
+
+h1 .char63 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.292em;
+}
+
+h1 .char137 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.208em;
+}
+
+h1 .char163 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.292em;
+}
+
+h1 .char124 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.042em;
+    font-size: 90%;
+}
+
+h1 .char123 {
+    vertical-align: top;
+    font-size: 160%;
+}
+
+h1 .char125 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.181em;
+}
+
+h1 .char175 {
+    vertical-align: top;
+}
+
+h1 .char415 {
+    vertical-align: top;
+    margin-left: -0.139em;
+    display: inline-block;
+    position: relative;
+    top: 0.097em;
+}
+
+h1 .char489 {
+    vertical-align: top;
+    margin-left: -0.069em;
+    display: inline-block;
+    position: relative;
+    top: -0.194em;
+}
+
+h1 .char490 {
+    vertical-align: top;
+    margin-left: -0.097em;
+    display: inline-block;
+    position: relative;
+    top: 0.028em;
+}
+
+h1 .char485 {
+    vertical-align: top;
+    margin-left: 0.181em;
+    display: inline-block;
+    position: relative;
+    top: 0.028em;
+}
+
+h1 .char672 {
+    vertical-align: top;
+    margin-left: -0.097em;
+    display: inline-block;
+    position: relative;
+    top: -0.208em;
+}
+
+h1 .char670 {
+    vertical-align: top;
+    margin-left: 0.569em;
+}
+
+h1 .char754 {
+    vertical-align: top;
+    margin-left: -0.042em;
+    display: inline-block;
+    position: relative;
+    top: 0.389em;
+}
+
+h1 .char778 {
+    vertical-align: top;
+    margin-left: -0.014em;
+    display: inline-block;
+    position: relative;
+    top: 0.208em;
+}
+
+h1 .char788 {
+    vertical-align: top;
+    margin-left: 0.056em;
+    display: inline-block;
+    position: relative;
+    top: -0.653em;
+}
+
+h1 .char789 {
+    vertical-align: top;
+    margin-left: -0.208em;
+}
+
+h1 .char772 {
+    vertical-align: top;
+    margin-left: -0.014em;
+    display: inline-block;
+    position: relative;
+    top: 0.139em;
+}
+
+h1 .char770 {
+    vertical-align: top;
+    margin-left: -0.014em;
+    display: inline-block;
+    position: relative;
+    top: 0.181em;
+}
+
+h1 .char764 {
+    vertical-align: top;
+    margin-left: 0.417em;
+    display: inline-block;
+    position: relative;
+    top: -0.139em;
+}
+
+h1 .char220 {
+    vertical-align: top;
+    margin-left: -0.083em;
+    display: inline-block;
+    position: relative;
+    top: 0.056em;
+}
+
+h1 .char219 {
+    vertical-align: top;
+    margin-left: 0.278em;
+}
+
+h1 .char261 {
+    vertical-align: top;
+    margin-left: -0.403em;
+    display: inline-block;
+    position: relative;
+    top: -1.444em;
+    font-size: 184%;
+}
+
+h1 .char260 {
+    vertical-align: top;
+    margin-left: -0.208em;
+    display: inline-block;
+    position: relative;
+    top: 0.194em;
+}
+
+h1 .char259 {
+    vertical-align: top;
+    margin-left: 0.556em;
+    display: inline-block;
+    position: relative;
+    top: 0.153em;
+}
+
+h1 .char401 {
+    vertical-align: top;
+    margin-left: -0.444em;
+    display: inline-block;
+    position: relative;
+    top: 0.097em;
+}
+
+h1 .char434 {
+    vertical-align: top;
+    margin-left: 0.25em;
+    display: inline-block;
+    position: relative;
+    top: 0.056em;
+}
+
+h1 .char481 {
+    vertical-align: top;
+    margin-left: -0.375em;
+    display: inline-block;
+    position: relative;
+    top: 0.306em;
+}
+
+h1 .char436 {
+    vertical-align: top;
+    margin-left: -0.569em;
+    display: inline-block;
+    position: relative;
+    top: 0.014em;
+}
+
+h1 .char439 {
+    vertical-align: top;
+    margin-left: -0.014em;
+    display: inline-block;
+    position: relative;
+    top: -0.042em;
+}
+
+h1 .char441 {
+    vertical-align: top;
+    margin-left: 1.042em;
+    display: inline-block;
+    position: relative;
+    top: 0.069em;
+}
+
+h1 .char571 {
+    vertical-align: top;
+    margin-left: 0.306em;
+    display: inline-block;
+    position: relative;
+    top: 0.278em;
+}
+
+h1 .char572 {
+    vertical-align: top;
+    margin-left: -0.167em;
+    display: inline-block;
+    position: relative;
+    top: -0.25em;
+}
+
+h1 .char657 {
+    vertical-align: top;
+    margin-left: 0.167em;
+    display: inline-block;
+    position: relative;
+    top: 0.028em;
+}
+
+h1 .char659 {
+    vertical-align: top;
+    margin-left: -0.389em;
+    display: inline-block;
+    position: relative;
+    top: -0.042em;
+}
+
+h1 .char675 {
+    vertical-align: top;
+    margin-left: 0.111em;
+}
+
+h1 .char676 {
+    vertical-align: top;
+    margin-left: -0.389em;
+    display: inline-block;
+    position: relative;
+    top: 0.028em;
+}
+
+h1 .char714 {
+    vertical-align: top;
+    margin-left: 0.333em;
+    display: inline-block;
+    position: relative;
+    top: 0.097em;
+}
+
+h1 .char715 {
+    vertical-align: top;
+    margin-left: -0.264em;
+    display: inline-block;
+    position: relative;
+    top: 0.042em;
+}
+
+h1 .char684 {
+    vertical-align: top;
+    margin-left: -0.222em;
+    display: inline-block;
+    position: relative;
+    top: -0.208em;
+}
+
+h1 .char683 {
+    vertical-align: top;
+    margin-left: -0.069em;
+    display: inline-block;
+    position: relative;
+    top: -0.042em;
+}
+
+h1 .char188 {
+    vertical-align: top;
+    margin-left: 0.319em;
+    display: inline-block;
+    position: relative;
+    top: 0.028em;
+}
+
+h1 .char191 {
+    vertical-align: top;
+    margin-left: -0.569em;
+    display: inline-block;
+    position: relative;
+    top: 0.014em;
+}
+
+h1 .char231 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.417em;
+    font-size: 513%;
+}
+
+h1 .char225 {
+    vertical-align: top;
+    margin-left: 0.458em;
+    display: inline-block;
+    position: relative;
+    top: 0.111em;
+}
+
+h1 .char229 {
+    vertical-align: top;
+    margin-left: -0.486em;
+    display: inline-block;
+    position: relative;
+    top: 0.069em;
+}
+
+h1 .char274 {
+    vertical-align: top;
+    margin-left: 0.431em;
+    display: inline-block;
+    position: relative;
+    top: 0.069em;
+}
+
+h1 .char276 {
+    vertical-align: top;
+    margin-left: -0.556em;
+    display: inline-block;
+    position: relative;
+    top: 0.028em;
+}
+
+h1 .char286 {
+    vertical-align: top;
+    margin-left: 0.194em;
+}
+
+h1 .char288 {
+    vertical-align: top;
+    margin-left: -0.236em;
+    display: inline-block;
+    position: relative;
+    top: -4.236em;
+}
+
+h1 .char515 {
+    vertical-align: top;
+    margin-left: 0.444em;
+    display: inline-block;
+    position: relative;
+    top: 0.042em;
+}
+
+h1 .char519 {
+    vertical-align: top;
+    margin-left: -0.847em;
+    display: inline-block;
+    position: relative;
+    top: -0.125em;
+}
+
+h1 .char527 {
+    vertical-align: top;
+    margin-left: -0.431em;
+    display: inline-block;
+    position: relative;
+    top: -0.042em;
+    font-size: 114%;
+}
+
+h1 .char145 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.472em;
+}
+
+h1 .char235 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 3.778em;
+}
+
+h1 .char285 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -3.208em;
+}
+
+h1 .char246 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -4.153em;
+}
+
+h1 .char164 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -2.292em;
+}
+
+h1 .char165 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -2.389em;
+}
+
+h1 .char108 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -1.097em;
+}
+
+h1 .char142 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -1.056em;
+}
+
+h1 .char126 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -2.083em;
+}
+
+h1 .char91 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.292em;
+}
+
+h1 .char223 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -1.986em;
+}
+
+h1 .char101 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -2.194em;
+}
+
+h1 .char239 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -3.222em;
+}
+
+h1 .char322 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -3.917em;
+}
+
+h1 .char325 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -3.417em;
+}
+
+h1 .char327 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -3.639em;
+}
+
+h1 .char250 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -1.889em;
+}
+
+h1 .char251 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -2.25em;
+}
+
+h1 .char72 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 2.194em;
+}
+
+h1 .char66 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 1.097em;
+    font-size: 167%;
+}
+
+h1 .char59 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.861em;
+}
+
+h1 .char51 {
+    vertical-align: top;
+    font-size: 230%;
+}
+
+h1 .char98 {
+    vertical-align: top;
+    margin-left: 0.944em;
+    display: inline-block;
+    position: relative;
+    top: -1.056em;
+    font-size: 172%;
+}
+
+h1 .char55 {
+    vertical-align: top;
+    font-size: 178%;
+}
+
+h1 .char61 {
+    vertical-align: top;
+    font-size: 133%;
+}
+
+h1 .char131 {
+    vertical-align: top;
+    font-size: 108%;
+}
+
+h1 .char133 {
+    vertical-align: top;
+    font-size: 179%;
+}
+
+h1 .char136 {
+    vertical-align: top;
+    font-size: 288%;
+}
+
+h1 .char7 {
+    vertical-align: top;
+    font-size: 152%;
+}
+
+h1 .char3 {
+    vertical-align: top;
+    font-size: 80%;
+}
+
+h1 .char41 {
+    vertical-align: top;
+    font-size: 105%;
+}
+
+h1 .char46 {
+    vertical-align: top;
+    font-size: 208%;
+}
+
+h1 .char8 {
+    vertical-align: top;
+    font-size: 112%;
+}
+
+h1 .char392 {
+    vertical-align: top;
+    font-size: 124%;
+}
+
+h1 .char390 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.139em;
+    font-size: 157%;
+}
+
+h1 .char307 {
+    vertical-align: top;
+    font-size: 140%;
+}
+
+h1 .char386 {
+    vertical-align: top;
+    font-size: 101%;
+}
+
+h1 .char389 {
+    vertical-align: top;
+    font-size: 138%;
+}
+
+h1 .char504 {
+    vertical-align: top;
+    font-size: 117%;
+}
+
+h1 .char623 {
+    vertical-align: top;
+    font-size: 285%;
+}
+
+h1 .char601 {
+    vertical-align: top;
+    font-size: 219%;
+}
+
+h1 .char561 {
+    vertical-align: top;
+    font-size: 111%;
+}
+
+h1 .char510 {
+    vertical-align: top;
+    font-size: 42%;
+}
+
+h1 .char508 {
+    vertical-align: top;
+    font-size: 94%;
+}
+
+h1 .char511 {
+    vertical-align: top;
+    font-size: 416%;
+}
+
+h1 .char476 {
+    vertical-align: top;
+    font-size: 387%;
+}
+
+h1 .char487 {
+    vertical-align: top;
+    font-size: 191%;
+}
+
+h1 .char602 {
+    vertical-align: top;
+    font-size: 225%;
+}
+
+h1 .char690 {
+    vertical-align: top;
+    font-size: 258%;
+}
+
+h1 .char765 {
+    vertical-align: top;
+    font-size: 358%;
+}
+
+h1 .char776 {
+    vertical-align: top;
+    font-size: 286%;
+}
+
+h1 .char784 {
+    vertical-align: top;
+    font-size: 113%;
+}
+
+h1 .char385 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.778em;
+}
+
+h1 .char343 {
+    vertical-align: top;
+    margin-left: 0.236em;
+    display: inline-block;
+    position: relative;
+    top: 2.25em;
+}
+
+h1 .char461 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 1.403em;
+}
+
+h1 .char360 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.278em;
+}
+
+h1 .char318 {
+    vertical-align: top;
+    margin-left: 0.611em;
+    display: inline-block;
+    position: relative;
+    top: -0.292em;
+}
+
+h1 .char405 {
+    vertical-align: top;
+    margin-left: 0.389em;
+    display: inline-block;
+    position: relative;
+    top: -0.444em;
+}
+
+h1 .char404 {
+    vertical-align: top;
+    margin-left: 1.986em;
+    display: inline-block;
+    position: relative;
+    top: -0.167em;
+}
+
+h1 .char336 {
+    vertical-align: top;
+}
+
+h1 .char339 {
+    vertical-align: top;
+    font-size: 156%;
+}
+
+h1 .char333 {
+    vertical-align: top;
+    font-size: 226%;
+}
+
+h1 .char544 {
+    vertical-align: top;
+    font-size: 145%;
+}
+
+h1 .char749 {
+    vertical-align: top;
+    font-size: 121%;
+}
+
+h1 .char547 {
+    vertical-align: top;
+    font-size: 107%;
+}
+
+h1 .char182 {
+    vertical-align: top;
+    font-size: 154%;
+}
+
+h1 .char203 {
+    vertical-align: top;
+    font-size: 118%;
+}
+
+h1 .char21 {
+    vertical-align: top;
+    font-size: 121%;
+}
+
+h1 .char25 {
+    vertical-align: top;
+    font-size: 102%;
+}
+
+h1 .char22 {
+    vertical-align: top;
+    font-size: 283%;
+}
+
+h1 .char718 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.556em;
+}
+
+h1 .char758 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.819em;
+}
+
+h1 .char755 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 1.208em;
+}
+
+h1 .char740 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 1.222em;
+}
+
+h1 .char738 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 1.056em;
+}
+
+h1 .char739 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.167em;
+}
+
+h1 .char737 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: 0.389em;
+}
+
+h1 .char785 {
+    vertical-align: top;
+    margin-left: 1.819em;
+    display: inline-block;
+    position: relative;
+    top: 0.139em;
+}
+
+h1 .char540 {
+    vertical-align: top;
+    margin-left: 0.278em;
+}
+
+h1 .char103 {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    top: -0.556em;
+}
+
