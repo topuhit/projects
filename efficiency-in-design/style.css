@@ -164,6 +164,9 @@ body {
     width: 90%;
     margin-left: .3em;
     }
+   .reveal{
+    padding: 3rem;
+   }
 }
 
 
@@ -316,13 +319,12 @@ screen and (min-width: 40em) {
     .reveal {
         top: 0px;
         left: 0px;
-        width: 100%;
         max-width: none;
-        height: 100vh;
-        min-height: 100vh;
         margin-left: 0px;
         border: 0px none;
         border-radius: 0px;
+        padding: 3rem;
+   }
     }
 }
 
