@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel='shortcut icon' href='favicon.gif' type='image/x-icon' />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/vertical-timeline.css">
+    <script src="https://t4t5.github.io/sweetalert/dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="https://t4t5.github.io/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="css/google.css">
+    <meta property="og:url" content="https://topuhit.github.io/projects/resume/">
+    <meta property="og:title" content="Resume">
+    <meta property="og:description" content="I’m Web Developer with over 2 years of experience specializing in Front End Development. Experienced with all stages of the development cycle for dynamic web projects. ">
+    <meta property="og:image" content="https://topuhit.github.io/projects/resume/facebook-cover.png">
+</head>
+
+<body id="about_me">
+
+    
+
+      <div class="container">
+      <br><br>  <br><br>
+      <h1 class="header center light-green-text">Success</h1>
+      <div class="row center"><br><br>
+        <h5 class="header col s12 light">You message has been successfully sent to Md. Tariqul Islam.</h5>  <br><br>
+        <br><br>
+      </div>
+      <div class="row center">
+        <a href="index.html" id="download-button" class="btn-large waves-effect waves-light light-blue darken-4 pulse">Home</a>
+      </div>
+      <br><br>
+
+    </div>
+
+
+            <footer class="page-footer light-blue darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Social Network</h5>
+                    <p class="grey-text text-lighten-4">Feel free to add connection with me on linkedin. I'm very much active on github follow me there <i class="em em-heart"></i>, Maybe we can work together on some idea/project of yours <i class="em em-thumbsup"></i>. I'm also active on <a class="grey-text text-lighten-3" href="https://www.facebook.com/TariqulDesign" target="_blank">Facebook</a> <i class="em em-wink"></i></p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Social Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/topuhit" target="_blank">Linkedin</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/topuhit" target="_blank">GitHub</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/user/topuhittopu" target="_blank">YouTube</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/TariqulDesign" target="_blank">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright light-blue darken-3">
+            <div class="container">
+                © 2017 All Rights Reserved
+                <a class="grey-text text-lighten-4 right" href="http://tariquldesign.com">Tariqul Design</a>
+            </div>
+    </footer>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script>
+    $(".button-collapse").sideNav({
+        closeOnClick: true
+    });
+
+    $(window).load(function() {
+        $(".content_body").removeClass("hide_this_section");
+        $('.loader_container').addClass("hide_this_section");
+        window.scrollTo(0, 1000);
+        window.scrollTo(0, -1000);
+    });
+
+    $(document).ready(function() {
+        $('.parallax').parallax();
+    });
+    </script>
+    <script src="javascript/vertical-timeline.js"></script>
+    <script>
+    $(document).on('click', 'a', function(event) {
+        var clickedHref = $(this).attr('href');
+        if (clickedHref === '#about_me' || clickedHref === '#education' || clickedHref === '#skills_area' || clickedHref === '#contact_area') {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        } else if (clickedHref === '#!') {
+            event.preventDefault();
+        }
+    });
+    $('#textarea1').trigger('autoresize');
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>
