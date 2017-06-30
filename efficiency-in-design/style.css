@@ -30,13 +30,13 @@ body > div.float-right > p > span.ch2 {
 
 ::selection {
     color: #fff;
-    background: #141329;
+    background: rgba(20, 19, 41, .99);
    
 }
 /* For Mozilla Firefox */
 ::-moz-selection {
     color: #fff;
-    background: #141329;
+    background: rgb(20, 19, 41);
   
 }
 
