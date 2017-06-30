@@ -13,18 +13,33 @@ h1 {
 
 }
 
+body > div.float-right > p > span{
 
-
-
-::-moz-selection {
-    background: #141329;
-    color: white;
+    position: relative;
+    top: -0.25em;
+    font-size: 245%;
 }
+
+body > div.float-right > p > span.ch2 {
+      position: relative;
+    top: -0.85em;
+    font-size: 150%;
+}
+
+
 
 ::selection {
+    color: #fff;
     background: #141329;
-    color: white;
+   
 }
+/* For Mozilla Firefox */
+::-moz-selection {
+    color: #fff;
+    background: #141329;
+  
+}
+
 
 
 .float-right{
