@@ -201,6 +201,7 @@ border: 2px #141329 solid;
     bottom: 0px;
     left: 0px;
     z-index: 3;
+    width: 100vw;
     display: none;
     background-color: rgba(10, 10, 10, 0.45);
     overflow-y: scroll;
