@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/blueimp-gallery.min.css"> <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/jquery.unveil.js"></script>
+
 </head>
 <body>
 <h1>David Carson Gallery</h1>
@@ -48,8 +48,7 @@
             var output = '';
             for(var i = 0;i < people.length;i++){
               output += '<a href="big/'+people[i].name+' " title="'+people[i].name+'" data-gallery="">';
-              output += '<img src="thumb/bg.jpg" title="'+people[i].name+'"'+' data-src="thumb/'+people[i].name+'" />' ;
-
+              output += '<img src="thumb/'+people[i].name+' " title="'+people[i].name+'" data-gallery="">';
                
               //output += '<img src="thumb/'+people[i].name+' " title="'+people[i].name+'" data-gallery="">';
 
@@ -75,13 +74,6 @@ document.getElementById('links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
-
-
-// on scroll image load
-$(document).ready(function() {
-  $("img").unveil(200);
-});
-
 
 </script>
 </body>
