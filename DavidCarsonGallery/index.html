@@ -47,7 +47,11 @@
             var output = '';
             for(var i = 0;i < people.length;i++){
               output += '<a href="big/'+people[i].name+' " title="'+people[i].name+'" data-gallery="">';
-              output += '<img src="thumb/'+people[i].name+' " title="'+people[i].name+'" data-gallery="">';
+              output += '<img src="thumb/bg.jpg" title="'+people[i].name+'" data-gallery="" '+'data-src="thumb/'+people[i].name+'" />' ;
+
+               
+              //output += '<img src="thumb/'+people[i].name+' " title="'+people[i].name+'" data-gallery="">';
+
 
                
 
@@ -60,6 +64,7 @@
 
 </script>
 <script src="js/blueimp-gallery.min.js"></script>
+<script src="js/jquery.unveil.js"></script>
 <script>
 document.getElementById('links').onclick = function (event) {
     event = event || window.event;
@@ -69,6 +74,14 @@ document.getElementById('links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
+
+
+// on scroll image load
+$(document).ready(function() {
+  $("img").unveil();
+});
+
+
 </script>
 </body>
 </html>
