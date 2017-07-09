@@ -1,0 +1,15 @@
+body {
+	max-width: 950px;
+	margin: 0 auto;
+	background-color: #E6E6E6;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+img {
+	padding: 10px;
+}
+
+a {
+  color: #2F41CF;
+  text-decoration: none;
+}
