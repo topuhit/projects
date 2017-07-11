@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.lazy/1.7.4/jquery.lazy.plugins.min.js"></script>
+
+</head>
+<body>
+    <!-- load images the lazy way -->
+		<img class="lazy" data-src="images/Black.jpg" />
+		<img class="lazy" data-src="images/1.jpg" />
+		<img class="lazy" data-src="images/2.jpg" />
+		<img class="lazy" data-src="images/3.jpg" />
+		<img class="lazy" data-src="images/4.jpg" />
+		<img class="lazy" data-src="images/Black.jpg" />
+		<img class="lazy" data-src="images/5pm_print_07-c3ae989e788a5ed7103b8d7627ea8a6f.jpg" />
+		<img class="lazy" data-src="images/boceno_pm_05-1faf3818b3648caeffe65383562b81d8.jpg" />
+		<img class="lazy" data-src="images/capture-decran-2017-05-16-a-15.24.02.png" />
+		<img class="lazy" data-src="images/capture-decran-2017-05-16-a-15.26.29.png" />
+		<img class="lazy" data-src="images/lfp02_pmstudio_09-e2c07656a09869fe54430f0460d0.jpg" />
+		<img class="lazy" data-src="images/maxresdefault-7.jpg" />
+		<img class="lazy" data-src="images/maxresdefault-8.jpg" />
+		<img class="lazy" data-src="images/maxresdefault-9.jpg" />
+		<img class="lazy" data-src="images/pmstudio_adidas_02_2303166463f022b26317a44afd1.jpg" />
+		<img class="lazy" data-src="images/pmstudio_essence_04-5ae897c9778b9afb556cb90d36.jpg" />
+		<img class="lazy" data-src="images/pmstudio_lenid_poster-a29da704d5c7c0fcfddd52fc.jpg" />
+
+<script>
+
+    $(function() {
+        $('.lazy').Lazy();
+    });
+               
+
+</script>
+
+
+<style>
+
+body {
+	width: 50%;
+	margin: 0 auto;
+}
+
+    img.lazy {
+        width: 50%; 
+        height: 100%; 
+        display: block;
+        padding-bottom: 20px;
+    }
+          </style>
+</body>
+</html>

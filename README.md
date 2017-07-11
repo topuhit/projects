@@ -1,4 +1,5 @@
 # My Github Projects
+0.  [lazyload](https://topuhit.github.io/projects/lazyload)
 1.  [Efficiency in design](https://topuhit.github.io/projects/efficiency-in-design)
 2.  [Intruder](https://topuhit.github.io/projects/intruder)
 3.  [Card](https://topuhit.github.io/projects/card/)
