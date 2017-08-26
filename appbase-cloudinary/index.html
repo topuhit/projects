@@ -98,18 +98,18 @@ img {
 </style>
 <body>
 
-
-
-
-
 <h1 class="header">Tariqul Design</h1>
+
+
 
 <div id="images"></div>
 
 
-<p id="next" title="Load 10 images">next</p>
-<h3>Combination of Appbase.io and Cloudinary, with the hosting of Github.</h3>
+
+<h3>Appbase.io, Cloudinary and Github.</h3>
 <h4>This site is using appbase.io for database query/api and cloudinary for image hosting.</h4>
+
+<img  id="load" style="width: 400px; display: block; margin: auto;" src="ajax-loader.gif">
 
 
 
@@ -117,6 +117,10 @@ img {
 <script id="imagesTemplate" type="text/template">
 <figure> <a data-size="{{datasize}}" href="{{fullimage}}" target="_blank"> <img src="{{thumb}}" title="{{alttext}}" alt="{{alttext}}"></a><figcaption>{{figcaption}}<br><span class="size">Size: {{size}}</span></figcaption></figure>
 </script>
+
+
+<div style="height: 10vh">Scroll down!</div>
+
 
 
 <!-- PhotoSwipe Hidden Div -->
@@ -186,9 +190,12 @@ var appbaseRef = new Appbase({
 });
 		 var next = 0;
 
-		$('#next').click( function(){
-		  
-		   next = next + 10;
+
+
+$( document ).ready(function() {
+
+$('#load').show();
+           next = next + 10;
 		  appbaseRef.search({
 		  type: "dumpdata",
 		  body: {
@@ -218,6 +225,8 @@ var appbaseRef = new Appbase({
 					var template = $('#imagesTemplate').html();
 				    var html = Mustache.to_html(template, data);
 				    $('#images').append(html);
+
+				    $('#load').hide();
  
 		
 		}
@@ -226,8 +235,53 @@ var appbaseRef = new Appbase({
 		  console.log("search error: ", err);
 
 				})
+});
 
-		});
+
+ $(window).scroll(function() {   
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       	   $('#load').show();
+       	   next = next + 10;
+		  appbaseRef.search({
+		  type: "dumpdata",
+		  body: {
+		    query: {
+		      "match_all": {}
+		    },
+		    "size" : 10,
+		    "from": next
+		  }
+
+		}).on('data', function(res) {
+
+				for ( i = 0; i < res.hits.hits.length; i++){
+
+					// $('.imgr').append('<img src="'+ res.hits.hits[i]._source.thumb + '">');	  
+					
+					var data = {
+					    thumb: res.hits.hits[i]._source.thumb,
+					    size: res.hits.hits[i]._source.size,
+					    datasize: res.hits.hits[i]._source.datasize,
+					    fullimage: res.hits.hits[i]._source.fullimage,
+					    figcaption: res.hits.hits[i]._source.figcaption,
+					    alttext: res.hits.hits[i]._source.alttext
+					};
+
+
+					var template = $('#imagesTemplate').html();
+				    var html = Mustache.to_html(template, data);
+				    $('#images').append(html);
+				    $('#load').hide();
+ 
+		
+		}
+	  
+		}).on('error', function(err) {
+		  console.log("search error: ", err);
+
+				})
+   }
+});
 
 
 
