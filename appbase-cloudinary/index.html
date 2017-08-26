@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T</title>
+	<meta charset="utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/appbase-js/0.11.1/appbase.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+
+
+
+
+
+  
+
+  <link rel='stylesheet' id='photoswipe-lib-css' href='http://dump.tariquldesign.com/assets/plugins/photo-swipe/lib/photoswipe.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='photoswipe-default-skin-css' href='http://dump.tariquldesign.com/assets/plugins/photo-swipe/lib/default-skin/default-skin.css' type='text/css' media='all' />
+  <script type='text/javascript' src='http://dump.tariquldesign.com/assets/plugins/photo-swipe/lib/photoswipe.min.js'></script>
+  <script type='text/javascript' src='http://dump.tariquldesign.com/assets/plugins/photo-swipe/lib/photoswipe-ui-default.min.js'></script>
+  <script type='text/javascript' src='http://dump.tariquldesign.com/assets/plugins/photo-swipe/js/photoswipe.js'></script>
+
+
+
+
+</head>
+
+<style>
+
+
+	body {
+		font-family: 'Arial', sans-serif;
+		color: lightgray;
+		width: 80%;
+		margin: 0 auto;
+		background-color: #111;
+	}
+
+	#next {
+		cursor: pointer;
+		letter-spacing: 1px;
+		font-size: 24px;
+		font-weight: bold;
+		width: 50px;
+		line-height: 2em;
+		border-radius: 8px;
+		border: 1px slategray solid;
+		padding: 2px 30px 2px 20px;
+		display: flex;
+		clear: both;
+		text-align: center;
+		transition: all .1s ease-in;
+	}
+
+	#next:hover {
+		text-decoration: underline;
+		background-color: slategray;
+		color: white;
+		text-shadow: 2px 2px 9px #545454;
+		transition: all .1s ease-in;
+	}
+
+figure {
+	margin: 0;
+	padding: 0px;
+	float: left;
+	background-color: #1e1e1e;
+	margin: 10px;
+	border-radius: 4px;
+
+
+}
+.size {
+	font-size: 12px;
+	color: #595959;
+}
+
+figcaption {
+	font-weight: bold;
+    color: darkcyan;
+    margin: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+img {
+	box-shadow: 0px 5px 5px 0px #121212;
+	border-radius: 4px;
+
+
+}
+
+#images {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+	padding: 20px 0px;
+	font-size: 72px;
+	text-shadow: 5px 5px 5px black;
+
+}
+</style>
+<body>
+
+
+
+
+
+<h1 class="header">Tariqul Design</h1>
+
+<div id="images"></div>
+
+
+<p id="next" title="Load 10 images">next</p>
+<h3>Combination of Appbase.io and Cloudinary, with the hosting of Hithub.</h3>
+<h4>This site is using appbase.io for database query/api and cloudinary for image hosting.</h4>
+
+
+
+
+<script id="imagesTemplate" type="text/template">
+<figure> <a data-size="{{datasize}}" href="{{fullimage}}" target="_blank"> <img src="{{thumb}}" title="{{alttext}}" alt="{{alttext}}"></a><figcaption>{{figcaption}}<br><span class="size">Size: {{size}}</span></figcaption></figure>
+</script>
+
+
+<!-- PhotoSwipe Hidden Div -->
+<input type="hidden" id="ssp_main_postid" value="165" />
+<input type="hidden" id="ssp_main_cateid" value="1" />
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+
+
+
+
+
+
+<script>	
+var appbaseRef = new Appbase({
+  url: "https://JB35BJBMy:87221df9-c427-429e-a27d-08d24569f767@scalr.api.appbase.io",
+  appname: "aasdf"
+});
+		 var next = 0;
+
+		$('#next').click( function(){
+		  
+		   next = next + 10;
+		  appbaseRef.search({
+		  type: "dumpdata",
+		  body: {
+		    query: {
+		      "match_all": {}
+		    },
+		    "size" : 10,
+		    "from": next
+		  }
+
+		}).on('data', function(res) {
+
+				for ( i = 0; i < res.hits.hits.length; i++){
+
+					// $('.imgr').append('<img src="'+ res.hits.hits[i]._source.thumb + '">');	  
+					
+					var data = {
+					    thumb: res.hits.hits[i]._source.thumb,
+					    size: res.hits.hits[i]._source.size,
+					    datasize: res.hits.hits[i]._source.datasize,
+					    fullimage: res.hits.hits[i]._source.fullimage,
+					    figcaption: res.hits.hits[i]._source.figcaption,
+					    alttext: res.hits.hits[i]._source.alttext
+					};
+
+
+					var template = $('#imagesTemplate').html();
+				    var html = Mustache.to_html(template, data);
+				    $('#images').append(html);
+ 
+		
+		}
+	  
+		}).on('error', function(err) {
+		  console.log("search error: ", err);
+
+				})
+
+		});
+
+
+
+// appbaseRef.index({
+//   type: "product",
+//   id: 1,
+//   body: {
+//     "name": "A green door",
+//     "price": 12.5,
+//     "tags": [
+//         "home",
+//         "green"
+//     ],
+//     "stores": [
+//         "Walmart",
+//         "Target"
+//     ]
+// }
+// })
+		  
+// appbaseRef.search({
+//   type: "dumpdata",
+//   body: {
+//     query: {
+//       "match_all": {}
+//     },
+//     "size" : 20,
+//     "from": 30
+//   }
+// }).on('data', function(res) {
+
+// 		for ( i = 0; i < 100; i++){
+// 			document.write(res.hits.hits[i]._source.fullimage);
+// 			document.write('<br>')
+// 		}
+  
+// }).on('error', function(err) {
+//   console.log("search error: ", err);
+// })
+
+
+
+
+
+
+
+
+
+// // show loading image
+// $('#loader_img').show();
+
+// // main image loaded ?
+// $('#main_img').on('load', function(){
+//   // hide/remove the loading image
+//   $('#loader_img').hide();
+// });
+
+
+
+
+
+// appbaseRef.get({
+// 	type: "dumpdata",
+// 	id: "AV3aAWjdQL_OWTFeIjnD",
+// }).on('data', function(res) {
+
+
+//   // console.log(res);
+//   // console.log(res)
+//   // console.log(res._source.name);
+//   // console.log(res._source.price);
+//   // console.log(res._source.tags);
+//   // console.log(res._source.stores);
+//   document.write('alttext:' + res._source.alttext + '<br>', 'datasizes:' + res._source.datasize + '<br>' ,
+//   	res._source.figcaption) +'<br>';
+// })
+ 
+
+// appbaseRef.getStream({
+// 	type: "product",
+// 	id: 1,
+// }).on('data', function(res) {
+//   console.log(res)
+// })
+
+	
+// appbaseRef.search({
+// 	type: "product",
+// 	body: {
+// 		query: {
+// 			match_all: {}
+// 		}
+// 	}
+// }).on('data', function(res) {
+// 	console.log(res)
+// })
+</script>
+
+</body>
+</html>
