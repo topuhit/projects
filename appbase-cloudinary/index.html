@@ -198,14 +198,10 @@ a {
 
 
 
-
-
-
-
 <script>	
 var appbaseRef = new Appbase({
-  url: "https://JB35BJBMy:87221df9-c427-429e-a27d-08d24569f767@scalr.api.appbase.io",
-  appname: "aasdf"
+  url: "https://ROgt5l0iK:e225674b-a0d3-490c-98ee-dfe105f79ba8@scalr.api.appbase.io",
+  appname: "images"
 });
 		 var next = 0;
 
@@ -216,7 +212,7 @@ $( document ).ready(function() {
 $('#load').show();
            next = next + 10;
 		  appbaseRef.search({
-		  type: "dumpdata",
+		  type: "images",
 		  body: {
 		    query: {
 		      "match_all": {}
@@ -228,9 +224,7 @@ $('#load').show();
 		}).on('data', function(res) {
 
 				for ( i = 0; i < res.hits.hits.length; i++){
-
-					// $('.imgr').append('<img src="'+ res.hits.hits[i]._source.thumb + '">');	  
-					
+	
 					var data = {
 					    thumb: res.hits.hits[i]._source.thumb,
 					    size: res.hits.hits[i]._source.size,
@@ -256,13 +250,12 @@ $('#load').show();
 				})
 });
 
-
  $(window).scroll(function() {   
    if($(window).scrollTop() + $(window).height() == $(document).height()) {
        	   $('#load').show();
        	   next = next + 10;
 		  appbaseRef.search({
-		  type: "dumpdata",
+		  type: "images",
 		  body: {
 		    query: {
 		      "match_all": {}
@@ -274,9 +267,7 @@ $('#load').show();
 		}).on('data', function(res) {
 
 				for ( i = 0; i < res.hits.hits.length; i++){
-
-					// $('.imgr').append('<img src="'+ res.hits.hits[i]._source.thumb + '">');	  
-					
+				
 					var data = {
 					    thumb: res.hits.hits[i]._source.thumb,
 					    size: res.hits.hits[i]._source.size,
@@ -302,101 +293,6 @@ $('#load').show();
    }
 });
 
-
-
-// appbaseRef.index({
-//   type: "product",
-//   id: 1,
-//   body: {
-//     "name": "A green door",
-//     "price": 12.5,
-//     "tags": [
-//         "home",
-//         "green"
-//     ],
-//     "stores": [
-//         "Walmart",
-//         "Target"
-//     ]
-// }
-// })
-		  
-// appbaseRef.search({
-//   type: "dumpdata",
-//   body: {
-//     query: {
-//       "match_all": {}
-//     },
-//     "size" : 20,
-//     "from": 30
-//   }
-// }).on('data', function(res) {
-
-// 		for ( i = 0; i < 100; i++){
-// 			document.write(res.hits.hits[i]._source.fullimage);
-// 			document.write('<br>')
-// 		}
-  
-// }).on('error', function(err) {
-//   console.log("search error: ", err);
-// })
-
-
-
-
-
-
-
-
-
-// // show loading image
-// $('#loader_img').show();
-
-// // main image loaded ?
-// $('#main_img').on('load', function(){
-//   // hide/remove the loading image
-//   $('#loader_img').hide();
-// });
-
-
-
-
-
-// appbaseRef.get({
-// 	type: "dumpdata",
-// 	id: "AV3aAWjdQL_OWTFeIjnD",
-// }).on('data', function(res) {
-
-
-//   // console.log(res);
-//   // console.log(res)
-//   // console.log(res._source.name);
-//   // console.log(res._source.price);
-//   // console.log(res._source.tags);
-//   // console.log(res._source.stores);
-//   document.write('alttext:' + res._source.alttext + '<br>', 'datasizes:' + res._source.datasize + '<br>' ,
-//   	res._source.figcaption) +'<br>';
-// })
- 
-
-// appbaseRef.getStream({
-// 	type: "product",
-// 	id: 1,
-// }).on('data', function(res) {
-//   console.log(res)
-// })
-
-	
-// appbaseRef.search({
-// 	type: "product",
-// 	body: {
-// 		query: {
-// 			match_all: {}
-// 		}
-// 	}
-// }).on('data', function(res) {
-// 	console.log(res)
-// })
 </script>
 
 </body>

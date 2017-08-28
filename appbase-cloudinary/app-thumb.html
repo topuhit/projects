@@ -173,8 +173,8 @@ a {
 
 
 var appbaseRef = new Appbase({
-  url: "https://JB35BJBMy:87221df9-c427-429e-a27d-08d24569f767@scalr.api.appbase.io",
-  appname: "aasdf"
+  url: "https://ROgt5l0iK:e225674b-a0d3-490c-98ee-dfe105f79ba8@scalr.api.appbase.io",
+  appname: "images"
 });
 		 var next = 0;
 
@@ -183,7 +183,7 @@ $( document ).ready(function() {
 $('#load').show();
            next = next + 30;
 		  appbaseRef.search({
-		  type: "dumpdata",
+		  type: "images",
 		  body: {
 		    query: {
 		      "match_all": {}
@@ -233,7 +233,7 @@ $('#load').show();
        	   $('#load').show();
        	   next = next + 30;
 		  appbaseRef.search({
-		  type: "dumpdata",
+		  type: "images",
 		  body: {
 		    query: {
 		      "match_all": {}
@@ -267,8 +267,6 @@ $('#load').show();
 				    $('#images a').lightBox();
 				    
 					});
-
- 	
 			}
 	  
 		}).on('error', function(err) {
@@ -277,10 +275,6 @@ $('#load').show();
 				})
    }
 });
-
-
-
-
 
 </script>
 
