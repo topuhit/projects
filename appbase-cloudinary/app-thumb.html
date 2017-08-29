@@ -3,16 +3,21 @@
 <head>
 	<title>T</title>
 	<meta charset="utf-8">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/appbase-js/0.11.1/appbase.min.js"></script>
+
 	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/appbase-js/0.11.1/appbase.min.js"></script>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+
 
   <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
 <!--   <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script> -->
   <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+
 
 
 </head>
@@ -120,6 +125,19 @@ a {
 	top: 100px;
 }
 
+.bottom {
+		
+	position: fixed;
+	background-color: lightgray;
+	color: #111;
+	bottom: 20px;
+	right: 50px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	box-shadow: 0px 5px 5px 0px #121212;
+	cursor: pointer;
+}
+
 </style>
 <body>
 
@@ -127,6 +145,7 @@ a {
 
 <a href="index.html"><h3 class="another">Home</h3></a>
 <a href="fetch.html"><h3 class="another fetch">Fetch</h3></a>
+<a ><h3 class="bottom" id="switch">Switch</h3></a>
 
 <div id="images"></div>
 
@@ -175,7 +194,7 @@ a {
 <script>
 
 
-
+var switch_is_on = false;
 
 var appbaseRef = new Appbase({
   url: "https://ROgt5l0iK:e225674b-a0d3-490c-98ee-dfe105f79ba8@scalr.api.appbase.io",
@@ -186,14 +205,14 @@ var appbaseRef = new Appbase({
 $( document ).ready(function() {
 
 $('#load').show();
-           next = next + 30;
+           next = next + 50;
 		  appbaseRef.search({
 		  type: "images",
 		  body: {
 		    query: {
 		      "match_all": {}
 		    },
-		    "size" : 30,
+		    "size" : 50,
 		    "from": next
 		  }
 
@@ -268,10 +287,20 @@ $('#load').show();
 				    $('#load').hide();
 
 
+				    if(switch_is_on == true) {
+				    	margin();
+
+					} else {
+
+								}
+
+
 				    $(function() {
 				    $('#images a').lightBox();
 				    
 					});
+
+					
 			}
 	  
 		}).on('error', function(err) {
@@ -280,6 +309,27 @@ $('#load').show();
 				})
    }
 });
+
+$('#switch').click(function(){
+	switch_is_on = true;
+	margin();
+})
+
+function margin(){
+
+		
+
+	  	$('#images .thumb').css({
+		'margin' : '1px',
+		'border-radius': '0px'
+		});
+
+	  	$('#images a').css({
+		'line-height': 0
+		});
+
+
+}
 
 </script>
 
