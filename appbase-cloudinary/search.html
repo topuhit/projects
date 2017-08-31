@@ -100,6 +100,7 @@ figcaption {
 
 #load {
 	box-shadow: none;
+	padding-top: 30px;
 }
 
 
@@ -125,9 +126,6 @@ a {
 	top: 100px;
 }
 
-.search {
-	top: 140px;
-}
 .bottom {
 		
 	position: fixed;
@@ -141,14 +139,60 @@ a {
 	cursor: pointer;
 }
 
+
+
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 30%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 8px;
+
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+
+.style-1 input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #66afe9;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+
+
 </style>
 <body>
 
 <h1 class="header">Tariqul Design</h1>
 
+
+
+<h2>Search anything</h2>
+<div class="input-list style-1 clearfix">
+
+  <input type="text" value="" name="search" placeholder="Search..." >
+
+<img  id="load" style="width: 100px; height: 100px; margin: auto; display: none; overflow: hidden;" src="ajax-loader2.gif">
+
+</div>
+
+
+
+
 <a href="index.html"><h3 class="another">Home</h3></a>
 <a href="fetch.html"><h3 class="another fetch">Fetch</h3></a>
-<a href="search.html"><h3 class="another search">Search</h3></a>
 <a ><h3 class="bottom" id="switch">Switch</h3></a>
 
 <div id="images"></div>
@@ -158,34 +202,21 @@ a {
 <h3>Appbase.io, Cloudinary and Github.</h3>
 <h4>This site is using appbase.io for database query/api and cloudinary for image hosting.</h4>
 
-<img  id="load" style="width: 400px; display: block; margin: auto;" src="https://i.imgur.com/KKhMj6P.gif">
-
 
 <!-- <figure> <a data-size="{{datasize}}" href="{{fullimage}}" target="_blank"> <img src="{{thumb}}" title="{{alttext}}" alt="{{alttext}}"></a><figcaption>{{figcaption}}<br><span class="size">Size: {{size}}</span></figcaption></figure>
  -->
 
 
-
-
 <script id="imagesTemplate" type="text/template">
-
-
 
   <a href="https://res.cloudinary.com/demo/image/fetch/w_600/{{fullimage}}" title="{{figcaption}}"><img class="thumb" src="https://res.cloudinary.com/demo/image/fetch/w_150,h_150,c_fill/{{thumb}}" alt="{{figcaption}}"></a>
  
   
-
-
-
-
-
 <!-- <a href="{{thumb}}">
 <img src="http://res.cloudinary.com/demo/image/fetch/w_150,h_150,c_fill/{{thumb}}" alt="turntable" >
 </a> -->
 
 </div>
-
-
 
 
 </script>
@@ -198,6 +229,24 @@ a {
 <script>
 
 
+   $('input').blur(function() {
+       $('#load').hide();
+      })
+      .focus(function() {
+        $('#load').show();
+      });
+
+
+
+		 $( "input" )
+  .keyup(function() {
+
+    var value = $( this ).val();
+
+    $('#images').html('');
+
+
+
 var switch_is_on = false;
 
 var appbaseRef = new Appbase({
@@ -206,19 +255,26 @@ var appbaseRef = new Appbase({
 });
 		 var next = 0;
 
+
 $( document ).ready(function() {
 
-$('#load').show();
+
            next = next + 50;
 		  appbaseRef.search({
 		  type: "images",
 		  body: {
-		    query: {
-		      "match_all": {}
-		    },
-		    "size" : 50,
-		    "from": next
-		  }
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "figcaption": value
+          }
+        }
+      ]
+    }
+  }
+}
 
 		}).on('data', function(res) {
 
@@ -233,9 +289,9 @@ $('#load').show();
 					    alttext: res.hits.hits[i]._source.alttext
 					};
 
-
 					var template = $('#imagesTemplate').html();
 				    var html = Mustache.to_html(template, data);
+				    // $('#images').html('');
 				    $('#images').append(html);
 
 				    $('#load').hide();
@@ -245,7 +301,6 @@ $('#load').show();
 				    
 					});
 
- 
 		
 		}
 	  
@@ -254,91 +309,11 @@ $('#load').show();
 
 				})
 });
+   
+  })
+  .keyup();
 
 
- $(window).scroll(function() {   
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-       	   $('#load').show();
-       	   next = next + 30;
-		  appbaseRef.search({
-		  type: "images",
-		  body: {
-		    query: {
-		      "match_all": {}
-		    },
-		    "size" : 30,
-		    "from": next
-		  }
-
-		}).on('data', function(res) {
-
-				for ( i = 0; i < res.hits.hits.length; i++){
-
-					var data = {
-					    thumb: res.hits.hits[i]._source.thumb,
-					    size: res.hits.hits[i]._source.size,
-					    datasize: res.hits.hits[i]._source.datasize,
-					    fullimage: res.hits.hits[i]._source.fullimage,
-					    figcaption: res.hits.hits[i]._source.figcaption,
-					    alttext: res.hits.hits[i]._source.alttext
-					  
-					};
-
-
-					var template = $('#imagesTemplate').html();
-				    var html = Mustache.to_html(template, data);
-				    $('#images').append(html);
-				    $('#load').hide();
-
-
-				    if(switch_is_on == true) {
-				    	margin();
-
-					} else {
-
-								}
-
-
-				    $(function() {
-				    $('#images a').lightBox();
-				    
-					});
-
-					
-			}
-	  
-		}).on('error', function(err) {
-		  console.log("search error: ", err);
-
-				})
-   }
-});
-
-$('#switch').click(function(){
-	switch_is_on = true;
-	margin();
-})
-
-function margin(){
-
-		
-	  	$('#images .thumb').css({
-		'margin' : '1px',
-		'border-radius': '0px',
-		'transition' : 'margin 3s, border-radius 4s'
-		});
-
-	  	$('#images a').css({
-		'line-height': 0
-		});
-
-
-
-  
-
-
-
-}
 
 </script>
 
