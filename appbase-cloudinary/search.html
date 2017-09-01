@@ -235,7 +235,6 @@ input[type="text"]:focus {
 
 <script>
 
-
    $('input').blur(function() {
        $('#load').fadeOut();
       })
@@ -244,15 +243,12 @@ input[type="text"]:focus {
       });
 
 
-
-		 $( "input" )
+  $( "input" )
   .keyup(function() {
 
-    var value = $( this ).val();
+var value = $( this ).val();
 
-    $('#images').html('');
-
-
+$('#images').html('');
 
 var switch_is_on = false;
 
@@ -262,11 +258,9 @@ var appbaseRef = new Appbase({
 });
 		 var next = 0;
 
-
 $( document ).ready(function() {
 
-
-           next = next + 50;
+          next = next + 50;
 		  appbaseRef.search({
 		  type: "images",
 		  body: {
@@ -274,7 +268,7 @@ $( document ).ready(function() {
     "bool": {
       "must": [
         {
-          "match": {
+          "match_phrase_prefix": {
             "figcaption": value
           }
         }
@@ -299,7 +293,7 @@ $( document ).ready(function() {
 					var template = $('#imagesTemplate').html();
 				    var html = Mustache.to_html(template, data);
 				    // $('#images').html('');
-				    $('#images').append(html);
+				    $('#images').prepend(html);
 
 				    $('#load').hide();
 
@@ -317,8 +311,9 @@ $( document ).ready(function() {
 				})
 });
    
-  })
-  .keyup();
+  }).keyup();
+
+
 
 
 

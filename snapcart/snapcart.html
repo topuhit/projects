@@ -12,14 +12,56 @@
 <style>
 
 
-body {
-  font-family: "Garamond","Georgia","Times New Roman", serif;
-   
+/*  font-family: "Garamond","Georgia","Times New Roman", serif;*/   
+
+@font-face {
+  font-family: DINWebPro-Medium;
+  src: url("assets/DINWebPro-Medium.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebPro-Medium;
+  src: url("assets/DINWebPro-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: DINWebPro-Bold;
+  src: url("assets/DINWebPro-Bold.eot");
+}
+@font-face {
+  font-family: DINWebPro-Light;
+  src: url("assets/DINWebPro-Light.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebPro-Light;
+  src: url("assets/DINWebPro-Light.woff") format("woff");
+}
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWebPro-Bold;
+  src: url("assets/DINWebPro-Bold.woff") format("woff");
+}
+
+
+/* go on with normal style definitions */
+body { 
+font-family: DINWebPro-Medium, sans-serif;
+font-size: 24px;
+font-weight: normal;
+line-height: 1.2em;
+
 }
 
 
 
-    .flex {
+
+
+
+
+.flex {
   display: flex; /* Make products flex in row direction (default) */
   flex-wrap: wrap; /* Make products overflow on new row */
   justify-content: center; /* Or space-between or space-around */
@@ -55,16 +97,32 @@ ul {
 }
 
 h2 {
-  color: #515151;
-  margin: 20px 5px 2px 5px;
+
+  font-family: DINWebPro-Medium, sans-serif;
+font-size: 24px;
+font-weight: normal;
+line-height: 1.2em;
+
+margin: 20px 5px 2px 5px;
 
 }
 
 h5 {
-  color: #aaa;
+/*  color: #aaa;
   padding:  2px 5px 2px 5px;
-  line-height: 0;
+  line-height: 0;*/
+
+
+font-family: DINWebPro-Light, sans-serif;
+font-size: 14px;
+font-weight: normal;
+text-align: left;
+line-height: 1.35em;
+margin: 5px 5px 5px 5px;
+
 }
+
+
 </style>
 
 </head>
