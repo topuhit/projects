@@ -289,7 +289,7 @@ $( document ).ready(function() {
 					    figcaption: res.hits.hits[i]._source.figcaption,
 					    alttext: res.hits.hits[i]._source.alttext
 					};
-
+		
 					var template = $('#imagesTemplate').html();
 				    var html = Mustache.to_html(template, data);
 				    // $('#images').html('');
