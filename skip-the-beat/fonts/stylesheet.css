@@ -53,9 +53,10 @@
         color: #212529;
     }
 
-    .spon{
-        padding: 5px 10px;
-    }
+ .spon {
+    padding: 5px 5px;
+    margin-right: 10px;
+}
 
     .pad {
             padding-right: 0px;
