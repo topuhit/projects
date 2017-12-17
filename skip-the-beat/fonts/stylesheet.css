@@ -128,7 +128,6 @@ footer {
 
 .button1:hover {
     color: white;
-
     background-color: black;
     border: 1px solid;
 }
@@ -136,16 +135,23 @@ footer {
 .bg {
     /* The image used */
     background-image: url(8.jpg);
-
     /* Full height */
     height: 50%;
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-@media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    body>div.container>div.row>div>div>a>span {
+        font-size: 1em;
+    }
+    body>div.container>div.row>div {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
