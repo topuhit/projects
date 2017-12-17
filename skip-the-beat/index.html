@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap with Cloudinary</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <link href="/fonts/stylesheet.css" rel="stylesheet">
+
+
+
+    <style type="text/css">
+
+    body {
+    	font-family: 'Baron Neue'; font-weight: normal; font-style: normal;
+    }
+    .cover {
+        background-image: url(/assets/8.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        min-height: /*enter value here*/
+        ;
+    }
+
+    .imagebox {
+        background: black;
+        padding: 0px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .imagebox img {
+        opacity: 1;
+        transition: 0.5s opacity;
+    }
+
+    .imagebox .imagebox-desc {
+    	font-family: 'Baron Neue'; font-weight: normal; font-style: normal;
+        background-color: rgba(0, 0, 0, 0.6);
+        bottom: 0px;
+        color: white;
+        font-size: 1.2em;
+        left: 0px;
+        padding: 10px 15px;
+        position: absolute;
+        transition: 0.5s padding;
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagebox:hover img {
+        opacity: 0.7;
+    }
+
+    .imagebox:hover .imagebox-desc {
+        padding-bottom: 10%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="text-center">
+            <img src="/assets/BLEU.jpg" style="height: 80vh; padding: 40px;">
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="text-center">
+            <h3>22 OCTOBRE 2016</h3>
+            <br>
+            <h2>PROGRAMMATION</h2>
+            <br>
+            <div class="col-8 offset-2">
+                <img src="/assets/Capture.png" style="width: 100%;">
+
+            </div>
+
+             <br>
+
+              <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="imagebox">
+                        <a href="#hola">
+          <img src="/assets/s3arouge.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">S3A</span>
+        </a>
+                    </div>
+                </div>
+   <div class="col-sm-3">
+    <div class="imagebox">
+        <a href="#hola">
+          <img src="/assets/pablo.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">PABLO VALENTINO</span>
+        </a>
+    </div>
+</div>
+   <div class="col-sm-3">
+    <div class="imagebox">
+        <a href="#hola">
+          <img src="/assets/innersense.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">INNER SENSE</span>
+        </a>
+    </div>
+</div>
+
+   <div class="col-sm-3">
+    <div class="imagebox">
+        <a href="#hola">
+          <img src="/assets/innersense.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">INNER SENSE</span>
+        </a>
+    </div>
+</div>
+
+
+                <div class="col-sm-3">
+                    <div class="imagebox">
+                        <a href="#hola">
+          <img src="/assets/nick-v.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">NICK V</span>
+        </a>
+                    </div>
+                </div>
+   <div class="col-sm-3">
+    <div class="imagebox">
+        <a href="#hola">
+          <img src="/assets/neuegrafik.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">NEUE GRAFIK</span>
+        </a>
+    </div>
+</div>
+   <div class="col-sm-3">
+    <div class="imagebox">
+        <a href="#hola">
+          <img src="/assets/ringard.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">RINGARD</span>
+        </a>
+    </div>
+</div>
+
+   <div class="col-sm-3">
+    <div class="imagebox">
+        <a href="#hola">
+          <img src="/assets/basheed.jpg"  class="category-banner img-responsive" style="width: 100%;">
+          <span class="imagebox-desc">BASHED GROOVE</span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
