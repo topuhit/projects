@@ -34,6 +34,15 @@ p {
     font-style: normal;
 }
 
+.fg {
+    height: 80px; width: auto;
+}
+
+.dure {
+    height: 50px;
+    width: auto;
+}
+
 .cover {
     height: 100vh;
     background-image: url(8.jpg);
