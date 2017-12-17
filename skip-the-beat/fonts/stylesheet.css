@@ -22,9 +22,6 @@
     font-style: normal;
 }
 
-
-
-
 body {
     font-family: 'Baron Neue';
     font-weight: normal;
@@ -51,13 +48,11 @@ p {
     ;
 }
 
-
 body>div.container>div.text-center>h4 {
     font-size: 1.1rem;
     line-height: 1;
     margin-bottom: .2rem;
 }
-
 
 .fa {
     padding-right: 30px;
@@ -138,7 +133,6 @@ footer {
     border: 1px solid;
 }
 
-
 .bg {
     /* The image used */
     background-image: url(8.jpg);
@@ -153,6 +147,5 @@ footer {
 }
 
 @media (min-width: 576px) {}
-
 
 @media (min-width: 768px) {}
