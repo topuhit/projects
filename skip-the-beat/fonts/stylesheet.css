@@ -1,9 +1,7 @@
-
-
 @font-face {
     font-family: 'Futura Lt BT';
     src: url('FuturaBT-Light.woff2') format('woff2'),
-        url('FuturaBT-Light.woff') format('woff');
+    url('FuturaBT-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -11,7 +9,7 @@
 @font-face {
     font-family: 'Baron Neue';
     src: url('BaronNeue.woff2') format('woff2'),
-        url('BaronNeue.woff') format('woff');
+    url('BaronNeue.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +17,7 @@
 @font-face {
     font-family: 'Baron Neue';
     src: url('BaronNeueBold.woff2') format('woff2'),
-        url('BaronNeueBold.woff') format('woff');
+    url('BaronNeueBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -27,40 +25,46 @@
 
 
 
-    body {
-        font-family: 'Baron Neue'; font-weight: normal; font-style: normal;
-    }
+body {
+    font-family: 'Baron Neue';
+    font-weight: normal;
+    font-style: normal;
+}
 
-    p {
-         font-family: 'Futura Lt BT'; font-weight: 300; font-style: normal;
-    }
-    .cover {
-        height: 100vh;
-        background-image: url(8.jpg);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: bottom;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        min-height: /*enter value here*/
-        ;
-    }
+p {
+    font-family: 'Futura Lt BT';
+    font-weight: 300;
+    font-style: normal;
+}
 
-
-body > div.container > div.text-center > h4 {
-    font-size: 1.1rem;
-    line-height: 1;
+.cover {
+    height: 100vh;
+    background-image: url(8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: /*enter value here*/
+    ;
 }
 
 
-    .fa {
-        padding-right: 30px;
-        color: #212529;
-    }
+body>div.container>div.text-center>h4 {
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-bottom: .2rem;
+}
 
- .spon {
+
+.fa {
+    padding-right: 30px;
+    color: #212529;
+}
+
+.spon {
     padding: 5px 5px;
     margin-right: 10px;
 }
@@ -69,64 +73,70 @@ footer {
     font-size: 12px;
 }
 
-    .pad {
-            padding-right: 0px;
+.pad {
+    padding-right: 0px;
     padding-left: 0px;
-    }
+}
+
 .inner {
     padding: 40px;
     background-color: white;
     margin: 60px 10px;
 }
-    .imagebox {
-        background: black;
-        padding: 0px;
-        position: relative;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 20px;
-    }
 
-    .imagebox img {
-        opacity: 1;
-        transition: 0.5s opacity;
-    }
+.imagebox {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-    .imagebox .imagebox-desc {
-        font-family: 'Baron Neue'; font-weight: normal; font-style: normal;
-        background-color: rgba(0, 0, 0, 0.6);
-        bottom: 0px;
-        color: white;
-        font-size: 1.2em;
-        left: 0px;
-        padding: 10px 15px;
-        position: absolute;
-        transition: 0.5s padding;
-        text-align: center;
-        width: 100%;
-    }
+.imagebox img {
+    opacity: 1;
+    transition: 0.5s opacity;
+}
 
-    .imagebox:hover img {
-        opacity: 0.7;
-    }
+.imagebox .imagebox-desc {
+    font-family: 'Baron Neue';
+    font-weight: normal;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0px;
+    color: white;
+    font-size: 1.2em;
+    left: 0px;
+    padding: 10px 15px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 100%;
+}
 
-    .imagebox:hover .imagebox-desc {
-        padding-bottom: 10%;
-    }
+.imagebox:hover img {
+    opacity: 0.7;
+}
 
-    .button1 {
-        padding: 5px 30px;
-        font-family: 'Futura Lt BT'; font-weight: 300; font-style: normal;
-        background-color: white;
-        border: 1px solid;
-    }
+.imagebox:hover .imagebox-desc {
+    padding-bottom: 10%;
+}
 
-        .button1:hover {
-            color: white;
-  
-        background-color: black;
-        border: 1px solid;
-    }
+.button1 {
+    padding: 5px 30px;
+    font-family: 'Futura Lt BT';
+    font-weight: 300;
+    font-style: normal;
+    background-color: white;
+    border: 1px solid;
+}
+
+.button1:hover {
+    color: white;
+
+    background-color: black;
+    border: 1px solid;
+}
 
 
 .bg {
@@ -134,7 +144,7 @@ footer {
     background-image: url(8.jpg);
 
     /* Full height */
-    height: 50%; 
+    height: 50%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -142,17 +152,7 @@ footer {
     background-size: cover;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) {}
 
 
-
-   
-}
-
-
-@media (min-width: 768px) {
-
-
-
-
-}
+@media (min-width: 768px) {}
